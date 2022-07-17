@@ -6,18 +6,21 @@ import Pie from '../../components/About/Pie';
 import Data from '../../components/About/Data';
 import Author from '../../components/About/Author';
 import Info from '../../components/About/Info';
+import Layout from '../../components/Layout/index';
 
 const about = () => {
     return (
-        <div>
-            <About />
-            <Text />
-            <Map />
-            <Pie />
-            <Data />
-            <Author />
-            <Info />
-        </div>
+        <Layout>
+            <div>
+                <About />
+                <Text />
+                <Map />
+                <Pie />
+                <Data />
+                <Author />
+                <Info />
+            </div>
+        </Layout>
     )
 }
 

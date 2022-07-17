@@ -2,14 +2,17 @@ import React from 'react'
 import Header from '../../components/Resource/Header'
 import About from '../../components/Resource/About'
 import Card from '../../components/Resource/Card'
+import Layout from '../../components/Layout/index'
 
 const resource = () => {
     return (
-        <div>
-            <Header />
-            <About />
-            <Card />
-        </div>
+        <Layout>
+            <div>
+                <Header />
+                <About />
+                <Card />
+            </div>
+        </Layout>
     )
 }
 

@@ -4,17 +4,20 @@ import About from "../../components/Home/About";
 import Blog from "../../components/Home/Blog";
 import Sign from "../../components/Home/Sign";
 import Card from "../../components/Home/Card";
+import Layout from "../../components/Layout/index";
 
-const IndexPage = () => {
+const homepage = () => {
   return (
-    <>
-      <Header />
-      <About />
-      <Blog />
-      <Sign />
-      <Card />
-    </>
+    <Layout>
+      <div>
+        <Header />
+        <About />
+        <Blog />
+        <Sign />
+        <Card />
+      </div>
+    </Layout>
   )
 }
 
-export default IndexPage
+export default homepage

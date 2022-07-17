@@ -4,16 +4,19 @@ import Data from '../../components/Donate/Data';
 import App from '../../components/Donate/App';
 import Map from '../../components/Donate/Map';
 import Card from '../../components/Donate/Card';
+import Layout from '../../components/Layout/index';
 
 const donate = () => {
     return (
-        <div>
-            <Header />
-            <Data />
-            <App />
-            <Map />
-            <Card />
-        </div>
+        <Layout>
+            <div>
+                <Header />
+                <Data />
+                <App />
+                <Map />
+                <Card />
+            </div>
+        </Layout>
     )
 }
 
