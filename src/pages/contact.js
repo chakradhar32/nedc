@@ -1,18 +1,17 @@
-import React from 'react'
-import Header from '../../components/Contact/Header'
-import About from '../../components/Contact/About'
-import Layout from '../../components/Layout/index'
+import * as React from 'react';
+import Header from '../components/Contact/Header';
+import About from '../components/Contact/About';
+import Layout from '../components/Layout/index';
 
-const contact = () => {
-    return (
-        <Layout>
-            <div>
-                <Header />
-                <About />
-            </div>
-        </Layout>
+const ContactPage = () => {
+  return (
+    <Layout>
+      <div>
+        <Header />
+        <About />
+      </div>
+    </Layout>
+  );
+};
 
-    )
-}
-
-export default contact
+export default ContactPage;

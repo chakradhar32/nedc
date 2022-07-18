@@ -1,27 +1,33 @@
-import React from 'react'
-import About from '../../components/About/About';
-import Text from '../../components/About/Text';
-import Map from '../../components/About/Map';
-import Pie from '../../components/About/Pie';
-import Data from '../../components/About/Data';
-import Author from '../../components/About/Author';
-import Info from '../../components/About/Info';
-import Layout from '../../components/Layout/index';
+import * as React from 'react';
+import AboutUs from '../components/About/AboutUs';
+import Map from '../components/About/Map';
+import Pie from '../components/About/Pie';
+import Data from '../components/About/Data';
+import Author from '../components/About/Author';
+import History from '../components/About/History';
+import Layout from '../components/Layout/index';
+import Header from '../components/Common/Header';
 
-const about = () => {
-    return (
-        <Layout>
-            <div>
-                <About />
-                <Text />
-                <Map />
-                <Pie />
-                <Data />
-                <Author />
-                <Info />
-            </div>
-        </Layout>
-    )
-}
+const AboutPage = () => {
+  return (
+    <Layout>
+      <div>
+        <Header
+          title="About NEDC"
+          description={'The Leading Comprehensive Non-Profit Embryo Donation Program'}
+          cta={'Donate an Embryo'}
+          ctaLink={'/donate'}
+          image={'https://source.unsplash.com/random/700x400'}
+        />
+        <AboutUs />
+        <Map />
+        <Pie />
+        <Data />
+        <Author />
+        <History />
+      </div>
+    </Layout>
+  );
+};
 
-export default about
+export default AboutPage;
