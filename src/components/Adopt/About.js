@@ -25,8 +25,6 @@ const About = () => {
         </div>
         <h4
           sx={{
-            fontFamily: 'Adobe Devanagari',
-            fontStyle: 'normal',
             fontWeight: 400,
             fontSize: '50px',
             lineHeight: '50px',
@@ -35,7 +33,7 @@ const About = () => {
             mb: '32px',
           }}
         >
-          Adaption FAQs
+          Adoption FAQs
         </h4>
         <p>
           The National Embryo Donation Center (NEDC) understands your desire to have a family,

@@ -39,42 +39,48 @@ const Header = ({ title, cta, ctaLink, description, image }) => {
           >
             {title}
           </p>
-          <p
+          {description && (
+            <p
+              sx={{
+                fontSize: '30px',
+                lineHeight: '36px',
+                letterSpacing: '0.09em',
+                color: '#FFFFFF',
+                my: '1rem',
+              }}
+            >
+              {description}
+            </p>
+          )}
+          {cta && (
+            <Link
+              to={ctaLink}
+              sx={{
+                display: 'block',
+                my: '1rem',
+                fontSize: '16px',
+                color: ' #FFFFFF',
+                p: '1rem 1.5rem',
+                background: ' #F7A496',
+                borderRadius: '5px',
+                maxWidth: '250px',
+                textAlign: 'center',
+              }}
+            >
+              {cta}
+            </Link>
+          )}
+        </div>
+        {image && (
+          <div
             sx={{
-              fontSize: '30px',
-              lineHeight: '36px',
-              letterSpacing: '0.09em',
-              color: '#FFFFFF',
-              my: '1rem',
+              flex: '1 0 50%',
+              maxWidth: '50%',
             }}
           >
-            {description}
-          </p>
-          <Link
-            to={ctaLink}
-            sx={{
-              display: 'block',
-              my: '1rem',
-              fontSize: '16px',
-              color: ' #FFFFFF',
-              p: '1rem 1.5rem',
-              background: ' #F7A496',
-              borderRadius: '5px',
-              maxWidth: '250px',
-              textAlign: 'center',
-            }}
-          >
-            {cta}
-          </Link>
-        </div>
-        <div
-          sx={{
-            flex: '1 0 50%',
-            maxWidth: '50%',
-          }}
-        >
-          <img sx={{ maxWidth: '100%' }} src={image} alt="" />
-        </div>
+            <img sx={{ maxWidth: '100%' }} src={image} alt="" />
+          </div>
+        )}
       </div>
     </header>
   );

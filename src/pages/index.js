@@ -4,7 +4,7 @@ import WhatWeDo from '../components/Home/WhatWeDo';
 import Blog from '../components/Home/Blog';
 import EmbryoAdoption from '../components/Home/EmbryoAdoption';
 import SignUp from '../components/Home/SignUp';
-import Apply from '../components/Home/Apply';
+import Apply from '../components/Common/Apply';
 import Layout from '../components/Layout/index';
 
 const Homepage = () => {

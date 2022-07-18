@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Directors from '../components/Board/Directors';
 import Layout from '../components/Layout/index';
-import Header from '../components/Donate/Header';
+import Header from '../components/Common/Header';
 
 const BoardPage = () => {
   return (

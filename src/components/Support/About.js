@@ -35,7 +35,7 @@ const About = () => {
             mb: '32px',
           }}
         >
-          Adaption FAQs
+          Adoption FAQs
         </h4>
         <p>Learn about donating with cryptocurrency here!</p>
         <p>
