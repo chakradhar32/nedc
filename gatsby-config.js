@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `NEDC`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-theme-ui"]
+  plugins: ['gatsby-plugin-theme-ui'],
 };

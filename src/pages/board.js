@@ -1,20 +1,15 @@
-import React from 'react'
-import Board from '../../components/Board/Board';
-import Data from '../../components/Board/Data';
-import Author from '../../components/Board/Author';
-import Layout from '../../components/Layout/index';
+import * as React from 'react';
+import Directors from '../components/Board/Directors';
+import Layout from '../components/Layout/index';
+import Header from '../components/Donate/Header';
 
+const BoardPage = () => {
+  return (
+    <Layout>
+      <Header title="Board of Directors" />
+      <Directors />
+    </Layout>
+  );
+};
 
-const board = () => {
-    return (
-        <Layout>
-            <div>
-                <Board />
-                <Data />
-                <Author />
-            </div>
-        </Layout>
-    )
-}
-
-export default board
+export default BoardPage;
