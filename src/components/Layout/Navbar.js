@@ -41,10 +41,10 @@ const Navbar = () => {
           <Link to="/about">About Us</Link>
           <Link to="/adopt">FAQs</Link>
           <Link to="/stories">Personal Stories</Link>
-          <Link to="/resources">Resources</Link>
+          <Link to="/children-books">Resources</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/board">Board</Link>
-          <Link to="/support">Support</Link>
+          <Link to="/support-nedc">Support NEDC</Link>
           <Link
             to="/"
             sx={{

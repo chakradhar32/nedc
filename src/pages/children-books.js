@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Header from '../components/Resource/Header';
-import About from '../components/Resource/About';
-import Card from '../components/Resource/Card';
+import Header from '../components/ChildrenBooks/Header';
+import About from '../components/ChildrenBooks/About';
+import Card from '../components/ChildrenBooks/Card';
 import Layout from '../components/Layout/index';
 
 const ResourcePage = () => {

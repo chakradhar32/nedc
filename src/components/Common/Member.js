@@ -34,16 +34,18 @@ const Member = ({ data }) => {
         <div>{isOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
       </div>
       <div sx={{ pl: '5rem', mt: '0.5rem' }}>
-        {isOpen && (
-          <div
-            sx={{
-              p: {
-                lineHeight: '1rem',
-              },
-            }}
-            dangerouslySetInnerHTML={{ __html: data.description }}
-          />
-        )}
+        {isOpen
+          ? data.description && (
+              <div
+                sx={{
+                  p: {
+                    lineHeight: '1rem',
+                  },
+                }}
+                dangerouslySetInnerHTML={{ __html: data.description }}
+              />
+            )
+          : null}
       </div>
     </div>
   );

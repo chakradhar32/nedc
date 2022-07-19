@@ -28,8 +28,7 @@ const Header = () => {
             mb: '24px',
           }}
         >
-          {' '}
-          Support
+          Support NEDC
         </p>
         <p
           sx={{
