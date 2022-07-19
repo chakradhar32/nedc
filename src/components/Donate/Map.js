@@ -43,7 +43,7 @@ const Map = () => {
           We know you probably have a lot of questions about the embryo donation process. We’ve
           complied some helpful resources here for your benefit but, if you have any questions or
           need additional information, please do not hesitate to contact us toll free at
-          866-585-8549.
+          <b>866-585-8549.</b>
         </p>
 
         {data.map((item) => (

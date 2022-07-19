@@ -39,7 +39,7 @@ const AboutUs = () => {
             <h4>Our Mission</h4>
             <p>
               Our mission is to protect the lives and dignity of human embryos. We do that by
-              promoting, facilitating and educating about embryo donation and adoption (ED/EA).
+              promoting, facilitating and educating about <a href="https://www.embryodonation.org/donation/">embryo donation</a> and <a href="https://www.embryodonation.org/adoption/">adoption (ED/EA).</a>.
               We’re also the only clinic-based organization that works with families of all races,
               faiths and ethnic backgrounds. Our office is in Knoxville, TN.
             </p>
@@ -59,7 +59,7 @@ const AboutUs = () => {
             <p>
               So why are we here? When couples go through in vitro fertilization (IVF), there are
               often remaining embryos. Those are frozen and stored for later use. An estimated
-              1,000,000 human embryos are stored in the U.S. right now.
+              <a href="https://www.tandfonline.com/doi/abs/10.1080/14636778.2018.1546574?journalCode=cngs20&amp;">1,000,000 human embryos</a> are stored in the U.S. right now.
             </p>
             <p>
               When couples decide that their family is complete but still have embryos remaining,
@@ -73,8 +73,7 @@ const AboutUs = () => {
             <h4>How We Live Out the Mission & Vision</h4>
             <p>
               The NEDC provides for all the medical, legal and social aspects of ED/EA. When someone
-              donates embryos to us, we become the interim caregiver and our medical partners at
-              Southeastern Fertility store them at no charge to donors.
+              donates embryos to us, we become the interim caregiver and <a href="https://southeasternfertility.org/">our medical partners at Southeastern Fertility</a> store them at no charge to donors.
             </p>
             <p>
               From there, our team works hard to match the right embryos with the perfect family.

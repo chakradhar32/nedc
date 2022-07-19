@@ -54,8 +54,7 @@ const History = () => {
             infertile couples.
           </p>
           <p>
-            In the late 1990’s, the Christian Medical and Dental Association (CMDA) approached Dr.
-            Jeffrey Keenan, a Knoxville, Tennessee, Reproductive Endocrinologist, with the idea of
+            In the late 1990’s, the Christian Medical and Dental Association (CMDA) approached <a href="https://www.youtube.com/watch?v=qjDm1-hwdkE">Dr. Jeffrey Keenan</a>, a Knoxville, Tennessee, Reproductive Endocrinologist, with the idea of
             creating a medically-based non-profit embryo donation center. The center would accept
             all embryos regardless of number or grade and have its partner medical clinic store them
             on-site. The center would also actively match willing recipients with donors and then
