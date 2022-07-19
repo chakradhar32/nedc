@@ -41,6 +41,9 @@ const Member = ({ data }) => {
                   p: {
                     lineHeight: '1rem',
                   },
+                  a: {
+                    color: '#61A19E',
+                  },
                 }}
                 dangerouslySetInnerHTML={{ __html: data.description }}
               />
