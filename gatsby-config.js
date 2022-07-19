@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `NEDC`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `National Embryo Donation Centre`,
+    description: `The non-profit National Embryo Donation Center helps families using in vitro fertilization (IVF) manage their embryos and their options.`,
+    siteUrl: `https://www.embryodonation.org/`,
+    image: '/image/og-image.jpg',
   },
   plugins: [
     'gatsby-plugin-theme-ui',

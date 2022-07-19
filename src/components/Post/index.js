@@ -1,8 +1,14 @@
 import React from 'react';
+import parseEditorJsData from '../../helpers/parseEditorJsData';
 
 const Post = ({ data }) => {
-  console.log(data);
-  return <div>Post</div>;
+  return (
+    <div>
+      <div className="parsed">
+        {parseEditorJsData({ content: data.description, scripts: true })}
+      </div>
+    </div>
+  );
 };
 
 export default Post;

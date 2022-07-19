@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Header from '../components/Support/Header';
-import About from '../components/Support/About';
+import Header from '../components/Common/Header';
+import Support from '../components/Support/Support';
 import Input from '../components/Support/Input';
-import Data from '../components/Support/Data';
+import PlannedGiving from '../components/Support/PlannedGiving';
 import Form from '../components/Support/Form';
 import Layout from '../components/Layout/index';
 
@@ -10,10 +10,15 @@ const SupportPage = () => {
   return (
     <Layout>
       <div>
-        <Header />
-        <About />
+        <Header
+          title={'Support NEDC'}
+          description="Giving Life. Giving Hope. Building Families"
+          cta="Learn More About NDEC"
+          ctaLink="/about"
+        />
+        <Support />
         <Input />
-        <Data />
+        <PlannedGiving />
         <Form />
       </div>
     </Layout>

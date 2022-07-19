@@ -55,6 +55,7 @@ exports.createPages = async ({ graphql, actions, store, reporter }, { spaceId })
         component: postTemplate,
         context: {
           id: post.degaId,
+          slug: post.slug,
         },
       });
     }

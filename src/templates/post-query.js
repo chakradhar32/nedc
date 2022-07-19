@@ -1,13 +1,23 @@
 import { graphql } from 'gatsby';
-import PostPage from '@components/Post';
+import Post from '@components/Post';
+
+import React from 'react';
+import Layout from '../components/Layout/index';
+
+const PostPage = ({ data }) => {
+  const { post } = data;
+  console.log({ data });
+  return (
+    <Layout>
+      <Post data={post} />
+    </Layout>
+  );
+};
 
 export default PostPage;
 
 export const query = graphql`
-  query ($id: String!) {
-    space: degaSpace {
-      site_address
-    }
+  query ($slug: String!) {
     posts: allDegaPost {
       edges {
         node {
@@ -115,7 +125,7 @@ export const query = graphql`
         }
       }
     }
-    post: degaPost(degaId: { eq: $id }) {
+    post: degaPost(slug: { eq: $slug }) {
       published_date
       description
       excerpt

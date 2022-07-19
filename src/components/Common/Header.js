@@ -15,12 +15,12 @@ const Header = ({ title, cta, ctaLink, description, image }) => {
         sx={{
           maxWidth: '1400px',
           mx: 'auto',
-          height: '100%',
           display: 'flex',
           alignItems: 'center',
-          minHeight: 550,
           py: '4rem',
-          px: '1rem',
+          px: ['1rem', null, '2rem'],
+          height: '100%',
+          minHeight: 550,
         }}
       >
         <div

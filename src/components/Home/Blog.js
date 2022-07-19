@@ -111,6 +111,7 @@ const Blog = () => {
                 sx={{
                   display: 'block',
                   mt: '1rem',
+                  color: '#FFFFFF',
                   background: item.featured ? '#F7A496' : 'transparent',
                   fontSize: '16px',
                   lineHeight: '20px',

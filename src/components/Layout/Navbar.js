@@ -9,6 +9,7 @@ const Navbar = () => {
       sx={{
         maxWidth: '1400px',
         mx: 'auto',
+        px: ['1rem', null, '2rem'],
       }}
     >
       <div
