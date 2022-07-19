@@ -16,6 +16,7 @@ const Apply = () => {
       description:
         'This is your chance to give life and hope to another family! Thank you for valuing these precious lives. Begin filling out the NEDC application to donate embryos.',
       ctaLink: '/donate',
+      featured: true
     },
   ];
   return (
@@ -71,6 +72,8 @@ const Apply = () => {
                 to={item.ctaLink}
                 sx={{
                   display: 'inline-block',
+                  bg: item.featured ? '#8BBFBD' : 'transparent',
+                  color: item.featured ? '#FFFFFF' : '#666666',
                   border: '1px solid #8BBFBD',
                   borderRadius: '5px',
                   px: '42px',

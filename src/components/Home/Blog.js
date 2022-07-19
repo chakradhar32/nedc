@@ -114,7 +114,7 @@ const Blog = () => {
                   background: item.featured ? '#F7A496' : 'transparent',
                   fontSize: '16px',
                   lineHeight: '20px',
-                  border: '1px solid #FFFFFF',
+                  border: item.featured ? '1px solid #F7A496' : '1px solid #FFFFFF',
                   borderRadius: '5px',
                   padding: '12px 32px',
                   textAlign: 'center',

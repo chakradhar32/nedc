@@ -119,9 +119,15 @@ const Data = () => {
         }}
       >
         <p>{item.question}</p>
-        <p sx={{
-          mb: '1rem'
-        }}>{item.answer}</p>
+        <div
+          sx={{
+            mb: '1rem',
+            a: {
+              color: '#61A19E',
+            },
+          }}
+          dangerouslySetInnerHTML={{ __html: item.answer }}
+        />
       </div>))}
     </section>
   );
