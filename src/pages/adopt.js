@@ -5,11 +5,14 @@ import Data from '../components/Adopt/Data';
 import Map from '../components/Adopt/Map';
 import Layout from '../components/Layout/index';
 import Apply from '../components/Common/Apply';
+import { SEO } from '../components/Seo';
+
 
 const AdoptPage = () => {
   return (
     <Layout>
       <div>
+        <SEO title="Adoption | National Embryo Donation Center" />
         <Header
           title="Adoption"
           description="The Gift of Life."

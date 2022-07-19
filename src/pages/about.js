@@ -7,11 +7,13 @@ import Author from '../components/About/Author';
 import History from '../components/About/History';
 import Layout from '../components/Layout/index';
 import Header from '../components/Common/Header';
+import { SEO } from '../components/Seo';
 
 const AboutPage = () => {
   return (
     <Layout>
       <div>
+        <SEO title="About NEDC | National Embryo Donation Center" />
         <Header
           title="About NEDC"
           description={'The Leading Comprehensive Non-Profit Embryo Donation Program'}
