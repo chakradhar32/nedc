@@ -26,10 +26,12 @@ const Navbar = () => {
         <div
           sx={{
             display: 'flex',
-            gap: '36px',
+            gap: '1rem',
+            alignItems: 'center',
             a: {
               color: '#666',
               fontSize: '14px',
+              padding: '1rem',
             },
             'a:hover': {
               color: '#4B938EE5',
@@ -43,7 +45,21 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
           <Link to="/board">Board</Link>
           <Link to="/support">Support</Link>
-          <Link to="/">Donate an Embryo</Link>
+          <Link
+            to="/"
+            sx={{
+              display: 'block',
+              my: '1rem',
+              fontSize: '16px',
+              color: ' #FFFFFF !important',
+              p: '1rem 1.5rem !important',
+              background: ' #F7A496',
+              borderRadius: '5px',
+              textAlign: 'center',
+            }}
+          >
+            Adopt Embryos
+          </Link>
         </div>
       </div>
     </nav>

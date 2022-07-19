@@ -14,8 +14,8 @@ const Homepage = () => {
         <Header
           title={'National Embryo Donation Center'}
           description={'Giving Life. Giving Hope.'}
-          cta={'Donate an Embryo'}
-          ctaLink={'/donate'}
+          cta={'Adopt Embryos'}
+          ctaLink={'/adopt'}
           image={'https://source.unsplash.com/random/700x400'}
         />
         <WhatWeDo />

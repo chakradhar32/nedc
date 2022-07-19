@@ -15,8 +15,8 @@ const AboutPage = () => {
         <Header
           title="About NEDC"
           description={'The Leading Comprehensive Non-Profit Embryo Donation Program'}
-          cta={'Donate an Embryo'}
-          ctaLink={'/donate'}
+          cta={'Adopt Embryos'}
+          ctaLink={'/adopt'}
           image={'https://source.unsplash.com/random/700x400'}
         />
         <AboutUs />

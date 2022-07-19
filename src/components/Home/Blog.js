@@ -21,6 +21,7 @@ const Blog = () => {
       buttonText: 'Find Out More',
       icon: '/images/childrenBooksIcon.png',
       link: 'resources',
+      featured: true,
     },
     {
       title: 'Questions and Answers',
@@ -110,6 +111,7 @@ const Blog = () => {
                 sx={{
                   display: 'block',
                   mt: '1rem',
+                  background: item.featured ? '#F7A496' : 'transparent',
                   fontSize: '16px',
                   lineHeight: '20px',
                   border: '1px solid #FFFFFF',
