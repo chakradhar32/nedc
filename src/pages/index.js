@@ -18,7 +18,6 @@ const Homepage = () => {
           description={'Giving Life. Giving Hope.'}
           cta={'Adopt Embryos'}
           ctaLink={'/adoption'}
-          //  image={'https://source.unsplash.com/random/700x400'}
           video={'https://www.youtube.com/embed/DoFgXFMrdLY'}
         />
         <WhatWeDo />

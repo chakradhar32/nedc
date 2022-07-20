@@ -7,10 +7,13 @@ const Intro = () => {
   return (
     <section>
       <div
-        className="content"
+        className="text-content"
         sx={{
           mx: 'auto',
           mt: '3rem',
+          p: {
+            mb: '1rem',
+          },
         }}
       >
         <SectionHeader heading={'Adoption'} />

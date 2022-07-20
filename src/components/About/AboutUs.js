@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <section>
       <div
-        className="content"
+        className="text-content"
         sx={{
           display: 'flex',
           flexDirection: 'column',

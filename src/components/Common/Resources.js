@@ -9,11 +9,11 @@ const Resources = ({ title, data, description }) => {
   return (
     <section>
       <div
-        className="content"
+        className="text-content"
         sx={{ flexDirection: 'column', display: 'flex', alignItems: 'center' }}
       >
         <SectionHeader heading={title} />
-        <p>{description}</p>
+        <p dangerouslySetInnerHTML={{ __html: description }} />
 
         <div
           sx={{
@@ -25,7 +25,8 @@ const Resources = ({ title, data, description }) => {
           }}
         >
           {data.map((item) => (
-            <div
+            <a
+              key={item.title}
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -34,15 +35,16 @@ const Resources = ({ title, data, description }) => {
                 gap: '1rem',
                 width: '250px',
               }}
+              href={item.link}
             >
               <div>
                 <CgFileDocument />
               </div>
-              <h4 sx={{ textAlign: 'center' }}>{item.title}</h4>
-              <a href={item.link} sx={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              <h4 sx={{ textAlign: 'center', color: '#666' }}>{item.title}</h4>
+              <p sx={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                 View or Download <FaArrowRight />{' '}
-              </a>
-            </div>
+              </p>
+            </a>
           ))}
         </div>
       </div>

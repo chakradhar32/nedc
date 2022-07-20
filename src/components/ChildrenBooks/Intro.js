@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <section>
       <div
-        className="content"
+        className="text-content"
         sx={{
           mt: '1.5rem',
           mb: '3rem',

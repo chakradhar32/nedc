@@ -2,7 +2,6 @@
 import * as React from 'react';
 import Header from '../components/Common/Header';
 import Intro from '../components/Support/Intro';
-import Input from '../components/Support/Input';
 import PlannedGiving from '../components/Support/PlannedGiving';
 import SupportForm from '../components/Support/SupportForm';
 import Layout from '../components/Layout/index';
@@ -30,8 +29,6 @@ const SupportPage = () => {
             height="150"
           ></iframe>
         </div>
-
-        <Input />
         <PlannedGiving />
         <SupportForm />
       </div>

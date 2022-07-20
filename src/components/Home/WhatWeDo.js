@@ -7,7 +7,7 @@ import { Link } from 'gatsby';
 const WhatWeDo = () => {
   return (
     <section>
-      <div className="content" sx={{ display: 'flex', alignItems: 'center' }}>
+      <div className="text-content" sx={{ display: 'flex', alignItems: 'center' }}>
         <div>
           <h2
             sx={{

@@ -5,7 +5,7 @@ import { jsx } from 'theme-ui';
 const History = () => {
   return (
     <section id="history">
-      <div className="content">
+      <div className="text-content">
         <h3
           sx={{
             fontWeight: 400,

@@ -25,7 +25,7 @@ const Member = ({ data }) => {
         <div sx={{ display: 'flex', gap: '1rem' }}>
           <div sx={{ width: '4rem', height: '4rem', borderRadius: '50%', flex: '0 0 4rem' }}>
             <img
-              src={data.img || 'https://source.unsplash.com/random/300/?person'}
+              src={data.image || 'https://source.unsplash.com/random/300/?person'}
               alt=""
               sx={{ height: '100%', width: '100%', objectFit: 'cover', borderRadius: '50%' }}
             />

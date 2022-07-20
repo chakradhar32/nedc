@@ -6,7 +6,7 @@ import SectionHeader from '../Common/SectionHeader';
 const PlannedGiving = () => {
   return (
     <section sx={{ my: '2rem' }}>
-      <div className="content">
+      <div className="text-content">
         <SectionHeader heading="Planned Giving" />
         <div
           sx={{
