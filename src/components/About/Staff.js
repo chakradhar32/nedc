@@ -11,6 +11,7 @@ const Staff = () => {
       description:
         "<a href='https://www.youtube.com/watch?v=49YoE6I51rE" >
         'Dr. Jeffrey Keenan</a>, a highly respected infertility and reproductive medicine specialist, leads the NEDC team. He is the center’s president and medical director and a fertility specialist with <a href="https://southeasternfertility.org/">Southeastern Fertility</a> in Knoxville, TN. He is board certified in Obstetrics and Gynecology, as well as Reproductive Endocrinology and Infertility.<br>Dr. Keenan is also a professor at the University of Tennessee (UT) Graduate School of Medicine and is director of UT’s Division of Reproductive Endocrinology and Infertility. In practice since 1990, Dr. Keenan has performed innumerable fertility procedures with outstanding success rates. <a href="https://www.youtube.com/watch?v=49YoE6I51rE">To get to know Dr. Keenan better through an in-depth conversation with master interviewer Hallerin Hilton Hill, click here.</a>',
+      image: '/images/staff/staffJeff_edit-150x150.png',
     },
     {
       name: 'John Gordon, M.D.',
