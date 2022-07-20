@@ -7,19 +7,19 @@ const Map = () => {
   const data = [
     {
       title: 'Application To Adopt Embryos',
-      link: '/',
+      link: 'https://www.embryodonation.org/wp-content/uploads/2015/12/Embryo-Adoption-form.pdf',
     },
     {
       title: 'NEDC FEE Schedule',
-      link: '/',
+      link: 'https://www.embryodonation.org/wp-content/uploads/2022/06/NEDC-Fee-Schedule-6.8.22.pdf',
     },
     {
       title: 'Instructions For Embryo Recepient Letter To Donors',
-      link: '/',
+      link: 'https://www.embryodonation.org/wp-content/uploads/2018/10/Instructions-for-Embryo-Recipient-Letter-to-Donors.pdf',
     },
     {
       title: 'Flourish Consulting Services LLC Fee Summary',
-      link: '/',
+      link: 'https://www.embryodonation.org/wp-content/uploads/2022/03/2022-Flourish-Consulting-Services-Fee-Summary.pdf',
     },
   ];
   return (
