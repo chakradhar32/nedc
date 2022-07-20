@@ -7,7 +7,7 @@ const PlannedGiving = () => {
   return (
     <section sx={{ my: '2rem' }}>
       <div className="text-content">
-        <SectionHeader heading="Planned Giving" icon='' />
+        <SectionHeader heading="Planned Giving" />
         <div
           sx={{
             p: {

@@ -13,7 +13,7 @@ const Intro = () => {
           mb: '3rem',
         }}
       >
-        <SectionHeader heading="Children's Books" icon='/images/training-wheels@2x.png' />
+        <SectionHeader heading="Children's Books" />
         <div
           sx={{
             p: {

@@ -14,7 +14,7 @@ const AboutUs = () => {
           alignItems: 'center',
         }}
       >
-        <SectionHeader heading={'About Us'} icon="/images/about@2x.png" />
+        <SectionHeader heading={'About Us'} />
 
         <div
           sx={{

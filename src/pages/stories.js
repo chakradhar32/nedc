@@ -17,7 +17,7 @@ const StoryPage = ({ data }) => {
         <Header title="Personal Stories" />
         <section>
           <div className="content">
-            <SectionHeader heading="Personal Stories" icon='/images/personal stories@2x.png' />
+            <SectionHeader heading="Personal Stories" />
             <p>
               You can read all the medical information available. But sometimes you need to hear
               someone’s story to understand what will happen when you donate or adopt embryos. These

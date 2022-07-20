@@ -6,8 +6,8 @@ import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
 const Address = () => {
   return (
-    <section>
-      <SectionHeader heading={'Contact Us'} icon="/images/contact@2x.png" />
+    <section sx={{ mt: '2rem' }}>
+      <SectionHeader heading={'Contact Us'} />
       <div
         className="content"
         sx={{

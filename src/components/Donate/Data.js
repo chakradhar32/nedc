@@ -12,7 +12,7 @@ const Data = () => {
           mt: '3rem',
         }}
       >
-        <SectionHeader icon={'/images/donations@2x.png'} heading="Donation" />
+        <SectionHeader heading="Donation" />
         <div
           sx={{
             p: {

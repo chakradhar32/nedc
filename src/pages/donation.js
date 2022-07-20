@@ -15,7 +15,7 @@ const DonatePage = () => {
         <Header
           title="Donation"
           description="The Gift of Life"
-          cta="Donate an Embryo"
+          cta="Donate Embryo"
           ctaLink="/donation"
           video="https://www.youtube.com/embed/DkQ_y9Wleco"
         />
