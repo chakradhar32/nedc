@@ -309,14 +309,11 @@ input:focus + .sliderF {
   padding-bottom: 1rem;
 }
 
-
-
-
-
 .content {
   max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 1rem;
+  width: 100%;
 }
 .text-content {
   max-width: 1024px;

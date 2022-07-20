@@ -23,6 +23,7 @@ const SupportPage = () => {
         <Intro />
         <div sx={{ maxWidth: '960px', mx: 'auto', my: '2rem' }}>
           <iframe
+            title="donation-form"
             style={{ height: '600px', width: '95%', border: '1px solid #dddddd' }}
             src="https://www.flipcause.com/widget/NjMxMg=="
             width="300"

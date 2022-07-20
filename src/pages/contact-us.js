@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Header from '../components/Common/Header';
+import ContactForm from '../components/Contact/ContactForm';
 import Intro from '../components/Contact/Intro';
 import Layout from '../components/Layout/index';
 import { Seo } from '../components/Seo';
@@ -11,6 +12,7 @@ const ContactPage = () => {
       <div>
         <Header title="Contact Us" />
         <Intro />
+        <ContactForm />
       </div>
     </Layout>
   );

@@ -23,16 +23,19 @@ const Intro = () => {
             display: 'flex',
             alignItems: 'center',
             mb: '3rem',
+            gap: '2rem',
+            flexWrap: 'wrap',
           }}
         >
           <div
             sx={{
-              flex: '1 0 30%',
-              maxWidth: '30%',
+              flex: ['1 0 100%', null, null, '1 0 calc(30% - 1rem)'],
+              maxWidth: ['100%', null, null, 'calc(30% - 1rem)'],
+              px: '1rem',
             }}
           >
             <div sx={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem' }}>
-              <FaMapMarkerAlt />
+              <FaMapMarkerAlt sx={{ minWidth: '1em' }} />
               <div>
                 <h3
                   sx={{
@@ -51,7 +54,7 @@ const Intro = () => {
                     lineHeight: '24px',
                     color: '#8BBFBD',
                   }}
-                  href="/"
+                  href="http://maps.google.com/?q=11126+Kingston+Pike+Knoxville%2C+TN+37934"
                 >
                   11126 Kingston PikeKnoxville, TN 37934
                 </a>
@@ -59,7 +62,7 @@ const Intro = () => {
             </div>
 
             <div sx={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem' }}>
-              <FaPhone />
+              <FaPhone sx={{ minWidth: '1em' }} />
               <div>
                 <h4
                   sx={{
@@ -141,11 +144,19 @@ const Intro = () => {
           </div>
           <div
             sx={{
-              flex: '1 0 70%',
-              maxWidth: '70%',
+              flex: ['1 0 100%', null, null, '1 0 calc(70% - 1rem)'],
+              maxWidth: ['100%', null, null, 'calc(70% - 1rem)'],
             }}
           >
-            <img src="https://source.unsplash.com/random/800x400" alt="" />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.4996732334057!2d-84.15250378473559!3d35.88577608014727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c2ee6ea52e5f3%3A0x4a1daddb8b3077dc!2s11126%20Kingston%20Pike%2C%20Farragut%2C%20TN%2037934%2C%20USA!5e0!3m2!1sen!2sin!4v1658330046082!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
         <div>
