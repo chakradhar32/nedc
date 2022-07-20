@@ -7,7 +7,6 @@ import { Link } from 'gatsby';
 import parseDate from '../../helpers/parseDate';
 
 const Post = ({ data, nextPost, previousPost }) => {
-  console.log({ data, nextPost, previousPost });
   return (
     <main sx={{ maxWidth: '900px', mx: 'auto' }}>
       <div>

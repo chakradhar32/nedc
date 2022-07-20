@@ -10,7 +10,6 @@ import { Seo } from '../components/Seo';
 
 const StoryPage = ({ data }) => {
   const { posts } = data;
-  console.log({ posts });
   return (
     <Layout>
       <Seo title="Stories | National Embryo Donation Center" />

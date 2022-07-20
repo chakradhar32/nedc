@@ -9,7 +9,6 @@ const PostPage = ({ data }) => {
   const { posts, post: degaPost } = data;
   const currentPost = posts.edges.filter(({ node }) => node.id === degaPost.id)[0];
   const { previous: previousPost, next: nextPost } = currentPost;
-  console.log({ data });
   return (
     <Layout>
       <Seo title={degaPost.title} />
