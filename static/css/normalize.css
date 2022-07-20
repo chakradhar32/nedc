@@ -174,10 +174,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-ol,
-ul {
-  list-style: none;
-}
+
 html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
     Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -223,6 +220,7 @@ h6 {
 a {
   color: #8BBFBD;
   text-decoration: inherit;
+  font-weight: 500;
 }
 button,
 input,
@@ -254,4 +252,5 @@ img,
 video {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }

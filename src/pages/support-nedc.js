@@ -1,27 +1,38 @@
+/** @jsx jsx */
 import * as React from 'react';
 import Header from '../components/Common/Header';
-import Support from '../components/Support/Support';
+import Intro from '../components/Support/Intro';
 import Input from '../components/Support/Input';
 import PlannedGiving from '../components/Support/PlannedGiving';
-import Form from '../components/Support/Form';
+import SupportForm from '../components/Support/SupportForm';
 import Layout from '../components/Layout/index';
-import { SEO } from '../components/Seo';
+import { Seo } from '../components/Seo';
+import { jsx } from 'theme-ui';
 
 const SupportPage = () => {
   return (
     <Layout>
+      <Seo title="Support | National Embryo Donation Center" />
       <div>
-        <SEO title="Support | National Embryo Donation Center" />
         <Header
           title={'Support NEDC'}
           description="Giving Life. Giving Hope. Building Families"
           cta="Learn More About NDEC"
           ctaLink="/about"
         />
-        <Support />
+        <Intro />
+        <div sx={{ maxWidth: '960px', mx: 'auto', my: '2rem' }}>
+          <iframe
+            style={{ height: '600px', width: '95%', border: '1px solid #dddddd' }}
+            src="https://www.flipcause.com/widget/NjMxMg=="
+            width="300"
+            height="150"
+          ></iframe>
+        </div>
+
         <Input />
         <PlannedGiving />
-        <Form />
+        <SupportForm />
       </div>
     </Layout>
   );

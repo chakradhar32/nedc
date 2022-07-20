@@ -4,7 +4,7 @@ import React from 'react';
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
 
-const Header = ({ title, cta, ctaLink, description, image }) => {
+const Header = ({ title, cta, ctaLink, description, image, video }) => {
   return (
     <header
       sx={{
@@ -16,8 +16,10 @@ const Header = ({ title, cta, ctaLink, description, image }) => {
           maxWidth: '1400px',
           mx: 'auto',
           display: 'flex',
+          flexWrap: 'wrap',
+          gap: '2rem',
           alignItems: 'center',
-          py: '4rem',
+          py: ['2rem', '4rem'],
           px: ['1rem', null, '2rem'],
           height: '100%',
           minHeight: 550,
@@ -25,28 +27,30 @@ const Header = ({ title, cta, ctaLink, description, image }) => {
       >
         <div
           sx={{
-            flex: '1 0 50%',
-            maxWidth: '50%',
+            flex: ['1 0 100%', null, '1 0 calc(50% - 1rem)'],
+            maxWidth: ['100%', null, 'calc(50% - 1rem)'],
+            textAlign: ['center', null, 'left'],
           }}
         >
-          <p
+          <h1
             sx={{
-              fontSize: '60px',
-              lineHeight: '60px',
+              fontSize: ['2rem', null, '3rem'],
+              lineHeight: 1.15,
               color: '#FFFFFF',
               mb: '24px',
             }}
           >
             {title}
-          </p>
+          </h1>
           {description && (
             <p
               sx={{
-                fontSize: '30px',
+                fontSize: ['1rem', null, '1.25rem'],
                 lineHeight: '36px',
                 letterSpacing: '0.09em',
                 color: '#FFFFFF',
                 my: '1rem',
+                textTransform: 'uppercase',
               }}
             >
               {description}
@@ -56,29 +60,47 @@ const Header = ({ title, cta, ctaLink, description, image }) => {
             <Link
               to={ctaLink}
               sx={{
-                display: 'block',
+                display: 'inline-block',
                 my: '1rem',
                 fontSize: '16px',
                 color: ' #FFFFFF',
                 p: '1rem 1.5rem',
                 background: ' #F7A496',
+                border: '1px solid #F7A496',
                 borderRadius: '5px',
-                maxWidth: '250px',
+                minWidth: '200px',
                 textAlign: 'center',
+                '&:hover': {
+                  bg: 'transparent',
+                },
               }}
             >
               {cta}
             </Link>
           )}
         </div>
-        {image && (
+        {(image || video) && (
           <div
             sx={{
-              flex: '1 0 50%',
-              maxWidth: '50%',
+              flex: ['1 0 100%', null, '1 0 calc(50% - 1rem)'],
+              maxWidth: ['100%', null, 'calc(50% - 1rem)'],
             }}
           >
-            <img sx={{ maxWidth: '100%' }} src={image} alt="" />
+            {image ? (
+              <img sx={{ width: '100%' }} src={image} alt="" />
+            ) : (
+              <div class="video-container">
+                <iframe
+                  width="560"
+                  height="315"
+                  src={video}
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            )}
           </div>
         )}
       </div>

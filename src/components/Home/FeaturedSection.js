@@ -4,7 +4,7 @@ import React from 'react';
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
 
-const Blog = () => {
+const FeaturedSection = () => {
   const data = [
     {
       title: 'Embryo Adoption Stories',
@@ -21,7 +21,6 @@ const Blog = () => {
       buttonText: 'Find Out More',
       icon: '/images/childrenBooksIcon.png',
       link: 'resources',
-      featured: true,
     },
     {
       title: 'Questions and Answers',
@@ -29,7 +28,7 @@ const Blog = () => {
         'Have questions about embryo adoption? You are not alone. We can answer some of those most frequently asked by those curious about this life-affirming family-building option.',
       buttonText: 'Get Your Questions Answered',
       icon: '/images/faqIcon.png',
-      link: '/adopt',
+      link: '/adoption',
     },
   ];
 
@@ -43,13 +42,12 @@ const Blog = () => {
         sx={{
           display: 'flex',
           justifyContent: 'center',
+          alignItems: 'center',
+          flexWrap: 'wrap',
           width: '100%',
           mt: '24px',
-          maxWidth: '1400px',
-          mx: 'auto',
-          py: '4rem',
-          px: '1rem',
         }}
+        className="content"
       >
         {data.map((item) => (
           <div
@@ -71,6 +69,7 @@ const Blog = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
+                padding: '0.75rem',
               }}
             >
               <img src={item.icon} alt="" />
@@ -112,14 +111,17 @@ const Blog = () => {
                   display: 'block',
                   mt: '1rem',
                   color: '#FFFFFF',
-                  background: item.featured ? '#F7A496' : 'transparent',
+                  background: 'transparent',
                   fontSize: '16px',
                   lineHeight: '20px',
-                  border: item.featured ? '1px solid #F7A496' : '1px solid #FFFFFF',
+                  border: '1px solid #FFFFFF',
                   borderRadius: '5px',
                   padding: '12px 32px',
                   textAlign: 'center',
                   maxWidth: '250px',
+                  '&:hover': {
+                    background: '#F7A496',
+                  },
                 }}
               >
                 {item.buttonText}
@@ -132,4 +134,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default FeaturedSection;

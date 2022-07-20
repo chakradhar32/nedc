@@ -9,14 +9,13 @@ const Apply = () => {
       title: 'Apply for Adoption',
       description:
         'We understand your desire to complete your family, and embryo adoption allows you an adoption alternative to the experience of pregnancy and childbirth.',
-      ctaLink: '/adopt',
+      ctaLink: '/adoption',
     },
     {
       title: 'Apply for Donation',
       description:
         'This is your chance to give life and hope to another family! Thank you for valuing these precious lives. Begin filling out the NEDC application to donate embryos.',
-      ctaLink: '/donate',
-      featured: true
+      ctaLink: '/donation',
     },
   ];
   return (
@@ -26,12 +25,14 @@ const Apply = () => {
       }}
     >
       <div
+        className="content"
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          maxWidth: '1400px',
+          flexWrap: 'wrap',
+
           padding: '4rem',
-          mx: 'auto',
+
           gap: '32px',
         }}
       >
@@ -72,12 +73,16 @@ const Apply = () => {
                 to={item.ctaLink}
                 sx={{
                   display: 'inline-block',
-                  bg: item.featured ? '#8BBFBD' : 'transparent',
-                  color: item.featured ? '#FFFFFF' : '#666666',
+                  bg: 'transparent',
+                  color: '#666666',
                   border: '1px solid #8BBFBD',
                   borderRadius: '5px',
-                  px: '42px',
-                  py: '8px',
+                  px: '3rem',
+                  py: '1rem',
+                  '&:hover': {
+                    bg: '#8BBFBD',
+                    color: '#FFFFFF',
+                  },
                 }}
               >
                 Get Started

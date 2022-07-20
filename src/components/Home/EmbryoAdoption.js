@@ -7,10 +7,9 @@ const EmbryoAdoption = () => {
   return (
     <section>
       <div
+        className="content"
         sx={{
-          py: '4rem',
-          maxWidth: '1400px',
-          mx: 'auto',
+          maxWidth: '960px !important',
           display: 'flex',
           alignItems: 'center',
           borderBottom: '1px solid #E6E6E6',
@@ -20,14 +19,29 @@ const EmbryoAdoption = () => {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            gap: '32px',
+            gap: '2rem',
+            flexWrap: 'wrap',
           }}
         >
-          <div sx={{ flex: '1 0 50%', maxWidth: '50%' }}>
-            <img src="https://source.unsplash.com/random/700x400" alt="" />
+          <div
+            sx={{
+              flex: ['1 0 100%', null, '1 0 calc(70% - 1rem)'],
+              maxWidth: ['100%', null, 'calc(70% - 1rem)'],
+            }}
+          >
+            <img
+              src={'/images/home-callout-img-1.jpg'}
+              alt=""
+              sx={{ maxHeight: '400px', objectFit: 'cover' }}
+            />
           </div>
 
-          <div sx={{ flex: '1 0 50%', maxWidth: '50%' }}>
+          <div
+            sx={{
+              flex: ['1 0 100%', null, '1 0 calc(30% - 1rem)'],
+              maxWidth: ['100%', null, 'calc(30% - 1rem)'],
+            }}
+          >
             <h3
               sx={{
                 fontWeight: 500,
@@ -45,12 +59,16 @@ const EmbryoAdoption = () => {
                 display: 'inline-block',
                 fontWeight: 400,
                 fontSize: '16px',
-                px: '3rem',
-                py: '8px',
+                px: '2.5rem',
+                py: '0.75rem',
                 border: '1px solid #7CBBB8',
                 borderRadius: '5px',
                 color: ' #666666',
                 textDecoration: 'none',
+                '&:hover': {
+                  bg: '#7CBBB8',
+                  color: '#FFFFFF',
+                },
               }}
               href="/"
             >

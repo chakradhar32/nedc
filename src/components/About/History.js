@@ -5,21 +5,12 @@ import { jsx } from 'theme-ui';
 const History = () => {
   return (
     <section id="history">
-      <div
-        sx={{
-          maxWidth: '1400px',
-          mx: 'auto',
-          py: '4rem',
-          px: '1rem',
-        }}
-      >
+      <div className="content">
         <h3
           sx={{
-            fontFamily: 'Adobe Devanagari',
-            fontStyle: 'normal',
             fontWeight: 400,
-            fontSize: '50px',
-            lineHeight: '80px',
+            fontSize: ['1.5rem', null, '2.5rem'],
+            lineHeight: 1.15,
             color: ' #666666',
             textAlign: 'center',
             mb: '1.5rem',
@@ -54,11 +45,13 @@ const History = () => {
             infertile couples.
           </p>
           <p>
-            In the late 1990’s, the Christian Medical and Dental Association (CMDA) approached <a href="https://www.youtube.com/watch?v=qjDm1-hwdkE">Dr. Jeffrey Keenan</a>, a Knoxville, Tennessee, Reproductive Endocrinologist, with the idea of
-            creating a medically-based non-profit embryo donation center. The center would accept
-            all embryos regardless of number or grade and have its partner medical clinic store them
-            on-site. The center would also actively match willing recipients with donors and then
-            facilitate the clinic’s performance of the actual transfers.
+            In the late 1990’s, the Christian Medical and Dental Association (CMDA) approached{' '}
+            <a href="https://www.youtube.com/watch?v=qjDm1-hwdkE">Dr. Jeffrey Keenan</a>, a
+            Knoxville, Tennessee, Reproductive Endocrinologist, with the idea of creating a
+            medically-based non-profit embryo donation center. The center would accept all embryos
+            regardless of number or grade and have its partner medical clinic store them on-site.
+            The center would also actively match willing recipients with donors and then facilitate
+            the clinic’s performance of the actual transfers.
           </p>
           <p>
             Originally part of the Baptist Health System in Knoxville, the new organization began

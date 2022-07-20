@@ -66,9 +66,8 @@ const Directors = () => {
   return (
     <section>
       <div
+        className="content"
         sx={{
-          maxWidth: '1400px',
-          mx: 'auto',
           mt: '3rem',
         }}
       >

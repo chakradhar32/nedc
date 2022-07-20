@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { jsx } from 'theme-ui';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
-const Member = ({ data }) => {
+const Faq = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div sx={{ maxWidth: '750px', width: '100%', mx: 'auto' }}>
@@ -23,23 +23,15 @@ const Member = ({ data }) => {
         }}
       >
         <div sx={{ display: 'flex', gap: '1rem' }}>
-          <div sx={{ width: '4rem', height: '4rem', borderRadius: '50%', flex: '0 0 4rem' }}>
-            <img
-              src={data.img || 'https://source.unsplash.com/random/300/?person'}
-              alt=""
-              sx={{ height: '100%', width: '100%', objectFit: 'cover', borderRadius: '50%' }}
-            />
-          </div>
           <div sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h4 sx={{ color: '#61A19E', fontSize: '1.25rem' }}>{data.name}</h4>
-            <p sx={{ mt: '0.5rem', fontSize: '0.75rem' }}>{data.position}</p>
+            <h4 sx={{ color: '#61A19E', fontSize: '1.25rem' }}>{data.question}</h4>
           </div>
         </div>
         <div>{isOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
       </div>
-      <div sx={{ pl: '6.25rem', pt: '0.5rem', pr: '2.5rem', bg: '#fff' }}>
+      <div sx={{ pt: '0.5rem', px: '2.5rem', bg: '#fff' }}>
         {isOpen
-          ? data.description && (
+          ? data.answer && (
               <div
                 sx={{
                   pb: '2rem',
@@ -50,7 +42,7 @@ const Member = ({ data }) => {
                     color: '#61A19E',
                   },
                 }}
-                dangerouslySetInnerHTML={{ __html: data.description }}
+                dangerouslySetInnerHTML={{ __html: data.answer }}
               />
             )
           : null}
@@ -59,4 +51,4 @@ const Member = ({ data }) => {
   );
 };
 
-export default Member;
+export default Faq;

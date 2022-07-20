@@ -6,21 +6,28 @@ const SignUp = () => {
   return (
     <section>
       <div
+        className="content"
         sx={{
-          maxWidth: '1400px',
-          mx: 'auto',
-          p: '4rem 2rem',
+          maxWidth: '960px !important',
           display: 'flex',
+          alignItems: 'center',
+          gap: '2rem',
+          flexWrap: 'wrap',
         }}
       >
-        <div sx={{ flex: '1 0 50%', maxWidth: '50%', p: '1rem' }}>
+        <div
+          sx={{
+            flex: ['1 0 100%', null, null, '1 0 calc(50% - 1rem)'],
+            maxWidth: ['100%', null, null, 'calc(50% - 1rem)'],
+            p: '1rem',
+          }}
+        >
           <h3
             sx={{
-              fontFamily: 'Adobe Devanagari',
-              fontStyle: 'normal',
               fontWeight: 400,
-              fontSize: '50px',
-              lineHeight: '50px',
+              fontSize: ['1.25rem', null, '2.25rem'],
+              lineHeight: 1.15,
+              mb: '1rem',
               color: ' #666666',
             }}
           >
@@ -82,20 +89,31 @@ const SignUp = () => {
               display: 'inline-block',
               mt: '16px',
               background: ' #8BBFBD',
+              border: '1px solid #8BBFBD',
               borderRadius: '5px',
               fontWeight: 400,
               fontSize: '16px',
               lineHeight: '40px',
               color: ' #FFFFFF',
               px: '42px',
+              '&:hover': {
+                bg: '#FFF',
+                color: '#88BFBD',
+              },
             }}
           >
             Submit
           </button>
         </div>
-        <div sx={{ flex: '1 0 50%', maxWidth: '50%', p: '1rem' }}>
+        <div
+          sx={{
+            flex: ['1 0 100%', null, '1 0 calc(50% - 1rem)'],
+            maxWidth: ['100%', null, 'calc(50% - 1rem)'],
+            p: '1rem',
+          }}
+        >
           <img
-            src="https://source.unsplash.com/random/700x400"
+            src="/images/home-callout-img-2.jpg"
             alt=""
             sx={{ height: '100%', objectFit: 'cover' }}
           />

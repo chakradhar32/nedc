@@ -7,19 +7,13 @@ import { Link } from 'gatsby';
 const WhatWeDo = () => {
   return (
     <section>
-      <div
-        sx={{
-          maxWidth: '1400px',
-          mx: 'auto',
-          py: '4rem',
-        }}
-      >
+      <div className="content" sx={{ display: 'flex', alignItems: 'center' }}>
         <div>
           <h2
             sx={{
-              fontSize: '50px',
+              fontSize: ['1.5rem', null, '2.5rem'],
               fontWeight: 400,
-              lineHeight: '80px',
+              lineHeight: 1.15,
               color: '#666666',
               textAlign: 'center',
             }}
@@ -77,19 +71,67 @@ const WhatWeDo = () => {
 
               <p>
                 Our cutting-edge work has garnered news coverage from national and international
-                media outlets such as <a href="https://www.today.com/health/27-year-old-frozen-embryo-sets-record-gibsons-welcome-molly-t202529">The Today Show on NBC,</a>, <a href="http://abcnews.go.com/GMA/video/woman-baby-embryo-frozen-24-years-ago-51898547">ABC’s Good Morning America</a>, <a href="https://www.washingtonpost.com/news/acts-of-faith/wp/2016/04/21/my-wife-and-i-are-white-evangelicals-heres-why-we-chose-to-give-birth-to-black-triplets/?utm_term=.2da4cbeab5e2">The Washington Post,</a>,<a href="https://www.nytimes.com/2020/12/03/science/tennessee-embryo-donate.html">The New York Times</a>, <a href="http://www.foxnews.com/health/2017/12/19/tennessee-woman-gives-birth-to-baby-who-was-frozen-as-embryo-for-24-years.html">Fox News,</a>, <a href="http://www.nbcnews.com/nightly-news/video/embryo-adoption-brings-hope-to-millions-of-infertile-couples-656057411536?platform=hootsuite">NBC Nightly News,</a>, <a href="http://www.bbc.com/news/magazine-36450328">BBC,</a>, <a href="http://www.cnn.com/2017/12/19/health/snowbaby-oldest-embryo-bn/index.html">CNN</a>, <a href="https://www.thegospelcoalition.org/article/where-can-discarded-embryos-go/">The Gospel Coalition,</a>, <a href="https://www.embryodonation.org/wp-content/uploads/2021/02/Gibsons-People-Love-Issue-article.pdf">People Magazine</a> and <a href="https://nypost.com/2020/12/01/baby-is-27-years-old-just-two-years-younger-than-her-mom/">The New York Post.</a>.
+                media outlets such as{' '}
+                <a href="https://www.today.com/health/27-year-old-frozen-embryo-sets-record-gibsons-welcome-molly-t202529">
+                  The Today Show on NBC,
+                </a>
+                ,{' '}
+                <a href="http://abcnews.go.com/GMA/video/woman-baby-embryo-frozen-24-years-ago-51898547">
+                  ABC’s Good Morning America
+                </a>
+                ,{' '}
+                <a href="https://www.washingtonpost.com/news/acts-of-faith/wp/2016/04/21/my-wife-and-i-are-white-evangelicals-heres-why-we-chose-to-give-birth-to-black-triplets/?utm_term=.2da4cbeab5e2">
+                  The Washington Post,
+                </a>
+                ,
+                <a href="https://www.nytimes.com/2020/12/03/science/tennessee-embryo-donate.html">
+                  The New York Times
+                </a>
+                ,{' '}
+                <a href="http://www.foxnews.com/health/2017/12/19/tennessee-woman-gives-birth-to-baby-who-was-frozen-as-embryo-for-24-years.html">
+                  Fox News,
+                </a>
+                ,{' '}
+                <a href="http://www.nbcnews.com/nightly-news/video/embryo-adoption-brings-hope-to-millions-of-infertile-couples-656057411536?platform=hootsuite">
+                  NBC Nightly News,
+                </a>
+                , <a href="http://www.bbc.com/news/magazine-36450328">BBC,</a>,{' '}
+                <a href="http://www.cnn.com/2017/12/19/health/snowbaby-oldest-embryo-bn/index.html">
+                  CNN
+                </a>
+                ,{' '}
+                <a href="https://www.thegospelcoalition.org/article/where-can-discarded-embryos-go/">
+                  The Gospel Coalition,
+                </a>
+                ,{' '}
+                <a href="https://www.embryodonation.org/wp-content/uploads/2021/02/Gibsons-People-Love-Issue-article.pdf">
+                  People Magazine
+                </a>{' '}
+                and{' '}
+                <a href="https://nypost.com/2020/12/01/baby-is-27-years-old-just-two-years-younger-than-her-mom/">
+                  The New York Post.
+                </a>
+                .
               </p>
               <p>
-                Considering embryo <a href="/donation">donation</a> or <a href="https://www.embryodonation.org/adoption/">adoption</a> is a big decision that has both emotional
-                and financial concerns. We invite you to browse our website, check out videos like
-                the one below, and find answers to many of the questions you may have.
+                Considering embryo <a href="/donation">donation</a> or{' '}
+                <a href="https://www.embryodonation.org/adoption/">adoption</a> is a big decision
+                that has both emotional and financial concerns. We invite you to browse our website,
+                check out videos like the one below, and find answers to many of the questions you
+                may have.
               </p>
               <p>
-                The <a href="http://www.ecfa.org/">Evangelical Council for Financial Accountability (ECFA)</a> has accredited the NEDC.
-                That means we hold to established standards for financial accountability and
-                transparency.<a href="https://www.embryodonation.org/support-nedc/">When you give to the NEDC,</a>,you can be confident your money is going
-                directly to our mission of helping children and families through embryo donation and
-                adoption!
+                The{' '}
+                <a href="http://www.ecfa.org/">
+                  Evangelical Council for Financial Accountability (ECFA)
+                </a>{' '}
+                has accredited the NEDC. That means we hold to established standards for financial
+                accountability and transparency.
+                <a href="https://www.embryodonation.org/support-nedc/">
+                  When you give to the NEDC,
+                </a>
+                ,you can be confident your money is going directly to our mission of helping
+                children and families through embryo donation and adoption!
               </p>
             </div>
           </div>
@@ -99,6 +141,7 @@ const WhatWeDo = () => {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
+              flexWrap: 'wrap',
               gap: '24px',
               a: {
                 display: 'block',
@@ -108,7 +151,7 @@ const WhatWeDo = () => {
             }}
           >
             <Link
-              to="/donate"
+              to="/donation"
               sx={{
                 color: '#FFFFFF',
                 background: '#8BBFBD',

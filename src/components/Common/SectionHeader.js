@@ -15,7 +15,7 @@ const SectionHeader = ({ heading, icon }) => {
             height: '62px',
             background: '#DDEFED',
             border: '8px solid #F4FDFC',
-            borderRadius: '50px',
+            borderRadius: '50%',
           }}
         >
           <img src={icon} alt="" />
@@ -24,7 +24,7 @@ const SectionHeader = ({ heading, icon }) => {
       <h3
         sx={{
           fontWeight: 400,
-          fontSize: '50px',
+          fontSize: ['1.25rem', null, '2.25rem'],
           lineHeight: '80px',
           color: '#666666',
           mx: 'auto',

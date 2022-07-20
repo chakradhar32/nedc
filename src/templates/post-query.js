@@ -3,13 +3,17 @@ import Post from '@components/Post';
 
 import React from 'react';
 import Layout from '../components/Layout/index';
+import { Seo } from '../components/Seo';
 
 const PostPage = ({ data }) => {
-  const { post } = data;
+  const { posts, post: degaPost } = data;
+  const currentPost = posts.edges.filter(({ node }) => node.id === degaPost.id)[0];
+  const { previous: previousPost, next: nextPost } = currentPost;
   console.log({ data });
   return (
     <Layout>
-      <Post data={post} />
+      <Seo title={degaPost.title} />
+      <Post data={degaPost} previousPost={previousPost} nextPost={nextPost} />
     </Layout>
   );
 };

@@ -11,11 +11,9 @@ const App = () => {
       }}
     >
       <div
+        className="content"
         sx={{
           display: 'flex',
-          maxWidth: '1400px',
-          padding: '4rem',
-          mx: 'auto',
           gap: '32px',
         }}
       >
@@ -30,11 +28,9 @@ const App = () => {
         >
           <h3
             sx={{
-              fontFamily: 'Adobe Devanagari',
-              fontStyle: 'normal',
               fontWeight: 400,
-              fontSize: '50px',
-              lineHeight: '50px',
+              fontSize: ['1.5rem', null, '2.5rem'],
+              lineHeight: 1.15,
               textAlign: 'center',
               color: '#666666',
             }}
@@ -77,11 +73,9 @@ const App = () => {
         >
           <h3
             sx={{
-              fontFamily: 'Adobe Devanagari',
-              fontStyle: 'normal',
               fontWeight: 400,
-              fontSize: '50px',
-              lineHeight: '50px',
+              fontSize: ['1.5rem', null, '2.5rem'],
+              lineHeight: 1.15,
               textAlign: 'center',
               color: '#666666',
             }}

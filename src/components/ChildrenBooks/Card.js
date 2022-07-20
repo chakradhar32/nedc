@@ -7,30 +7,33 @@ const Card = () => {
     {
       title: 'Buy Chosen & Loved on Amazon',
       description: 'Click below to purchase your copy of Chosen & Loved.',
-      button: 'BUY NOW',
+      link: 'BUY NOW',
     },
     {
       title: 'Buy Made With Love on Amazon',
       description: 'Click below to purchase your copy from Amazon.',
-      button: 'BUY NOW',
+      link: 'BUY NOW',
     },
     {
       title: 'Buy Treasure Babies On Amazon',
       description: 'Click below to purchase your copy from Amazon.',
-      button: 'BUY NOW',
+      link: 'BUY NOW',
     },
   ];
   return (
     <section
       sx={{
         background: '#EFF9F8',
-        height: '500px',
       }}
+      id="books"
     >
       <div
+        className="content"
         sx={{
           display: 'flex',
-          justifyContent: 'space-around',
+          justifyContent: 'center',
+          gap: ' 2.5rem',
+          flexWrap: 'wrap',
         }}
       >
         {data.map((item) => (
@@ -39,18 +42,23 @@ const Card = () => {
               background: '#FFFFFF',
               borderRadius: '10px',
               width: '300px',
-              maxWidth: '1400px',
-              mx: 'auto',
+              p: '2rem',
             }}
           >
-            <div>
+            <div
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '1rem',
+              }}
+            >
               <h4
                 sx={{
-                  fontFamily: 'Adobe Devanagari',
-                  fontStyle: 'normal',
                   fontWeight: 400,
-                  fontSize: '40px',
-                  lineHeight: '40px',
+                  fontSize: ['1.25rem', null, '2.25rem'],
+                  lineHeight: 1.15,
                   textAlign: 'center',
                   color: '#101828',
                 }}
@@ -70,21 +78,26 @@ const Card = () => {
               >
                 {item.description}
               </p>
-              <button
+              <a
+                href={item.link}
                 sx={{
-                  fontFamily: 'Inter',
-                  fontStyle: 'normal',
                   fontWeight: 500,
                   fontSize: '16px',
                   lineHeight: '24px',
                   color: '#FFFFFF',
                   textAlign: 'center',
                   background: '#8BBFBD',
-                  padding: '12px,20px',
+                  padding: '12px 20px',
+                  borderRadius: '0.25rem',
+                  border: '1px solid #8BBFBD',
+                  '&:hover': {
+                    background: '#fff',
+                    color: '#8BBFBD',
+                  },
                 }}
               >
-                {item.button}
-              </button>
+                Buy Now
+              </a>
             </div>
           </div>
         ))}

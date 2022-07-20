@@ -3,19 +3,23 @@ import React from 'react';
 import { jsx } from 'theme-ui';
 import SectionHeader from '../Common/SectionHeader';
 
-const Adoption = () => {
+const Intro = () => {
   return (
     <section>
       <div
+        className="content"
         sx={{
-          maxWidth: '1400px',
-          mx: 'auto',
           mt: '3rem',
         }}
       >
         <SectionHeader heading="Support the NEDC" />
-        <div>
-          <p>Learn about donating with cryptocurrency here!</p>
+        <div
+          sx={{
+            p: {
+              mb: '2rem',
+            },
+          }}
+        >
           <p>
             You can make a life-changing difference by investing in this work financially. Your
             giving protects the lives and dignity of human embryos. Your generous support also gives
@@ -40,10 +44,13 @@ const Adoption = () => {
           </p>
 
           <p>
-            The Evangelical Council for Financial Accountability (ECFA) has accredited the NEDC.
-            That means we hold to established standards for financial accountability and
-            transparency. When you give to the NEDC, you can be confident your money will go toward
-            carrying out this life-giving mission!
+            The{' '}
+            <a href="http://www.ecfa.org/">
+              Evangelical Council for Financial Accountability (ECFA)
+            </a>
+            has accredited the NEDC. That means we hold to established standards for financial
+            accountability and transparency. When you give to the NEDC, you can be confident your
+            money will go toward carrying out this life-giving mission!
           </p>
         </div>
       </div>
@@ -51,4 +58,4 @@ const Adoption = () => {
   );
 };
 
-export default Adoption;
+export default Intro;

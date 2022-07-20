@@ -5,19 +5,19 @@ import App from '../components/Donate/App';
 import Map from '../components/Donate/Map';
 import Layout from '../components/Layout/index';
 import Apply from '../components/Common/Apply';
-import { SEO } from '../components/Seo';
+import { Seo } from '../components/Seo';
 
 const DonatePage = () => {
   return (
     <Layout>
+      <Seo title="Donation | National Embryo Donation Center" />
       <div>
-        <SEO title="Donation | National Embryo Donation Center" />
         <Header
           title="Donation"
           description="The Gift of Life"
           cta="Donate an Embryo"
-          ctaLink="/donate"
-          image="https://source.unsplash.com/random/700x400"
+          ctaLink="/donation"
+          video="https://www.youtube.com/embed/DkQ_y9Wleco"
         />
         <Data />
         <App />

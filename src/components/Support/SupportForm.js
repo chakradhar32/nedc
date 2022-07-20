@@ -2,7 +2,7 @@
 import React from 'react';
 import { jsx } from 'theme-ui';
 
-const Form = () => {
+const SupportForm = () => {
   return (
     <section>
       <div></div>
@@ -10,4 +10,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default SupportForm;
