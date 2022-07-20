@@ -33,7 +33,10 @@ const Resources = ({ title, data, description }) => {
                 alignItems: 'center',
                 flexDirection: 'column',
                 gap: '1rem',
-                width: '250px',
+                width: '275px',
+                padding: '1.5rem',
+                borderRadius: '0.5rem',
+                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
               }}
               href={item.link}
             >

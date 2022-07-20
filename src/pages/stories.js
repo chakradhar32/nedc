@@ -14,7 +14,7 @@ const StoryPage = ({ data }) => {
     <Layout>
       <Seo title="Stories | National Embryo Donation Center" />
       <div>
-        <Header title="Personal Stories" />
+        <Header title="Personal Stories" cta="Adopt Embryos" ctaLink={'/adoption'} />
         <section>
           <div className="content">
             <SectionHeader heading="Personal Stories" />

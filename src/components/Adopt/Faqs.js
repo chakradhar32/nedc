@@ -3,7 +3,7 @@ import React from 'react';
 import { jsx } from 'theme-ui';
 import Faq from '../Common/FAQ';
 
-const Data = () => {
+const Faqs = () => {
   const data = [
     {
       question: 'What is the first step?',
@@ -135,6 +135,17 @@ const Data = () => {
         gap: '1rem',
       }}
     >
+      <h3
+        sx={{
+          textAlign: 'center',
+          fontSize: '2rem',
+          fontWeight: '500',
+          color: '#fff',
+          my: '1.5rem',
+        }}
+      >
+        Frequently Asked Questions
+      </h3>
       {data.map((item) => (
         <Faq data={item} />
       ))}
@@ -142,4 +153,4 @@ const Data = () => {
   );
 };
 
-export default Data;
+export default Faqs;

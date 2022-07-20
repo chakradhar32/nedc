@@ -10,7 +10,6 @@ const FeaturedSection = () => {
       title: 'Embryo Adoption Stories',
       description:
         'Do you want more personal information about embryo donation and adoption? Read stories from NEDC families who have walked through this journey.',
-      buttonText: 'Check Our Embryo Adoption Stories',
       icon: '/images/adoptionStoriesIcon.png',
       link: '/stories',
     },
@@ -18,7 +17,6 @@ const FeaturedSection = () => {
       title: 'Childrens Books for Your Family',
       description:
         'How do you tell your children about their unique adoption, or should you? Check out several books that will help satisfy your child’s curiosity about where they came from and reinforce your love for them.',
-      buttonText: 'Find Out More',
       icon: '/images/childrenBooksIcon.png',
       link: 'resources',
     },
@@ -26,7 +24,6 @@ const FeaturedSection = () => {
       title: 'Questions and Answers',
       description:
         'Have questions about embryo adoption? You are not alone. We can answer some of those most frequently asked by those curious about this life-affirming family-building option.',
-      buttonText: 'Get Your Questions Answered',
       icon: '/images/faqIcon.png',
       link: '/adoption',
     },
@@ -124,7 +121,7 @@ const FeaturedSection = () => {
                   },
                 }}
               >
-                {item.buttonText}
+                Find Out More
               </Link>
             </div>
           </div>

@@ -73,15 +73,16 @@ const Apply = () => {
                 to={item.ctaLink}
                 sx={{
                   display: 'inline-block',
-                  bg: 'transparent',
-                  color: '#666666',
+                  bg: '#8BBFBD',
+                  color: '#FFFFFF',
+
                   border: '1px solid #8BBFBD',
                   borderRadius: '5px',
                   px: '3rem',
                   py: '1rem',
                   '&:hover': {
-                    bg: '#8BBFBD',
-                    color: '#FFFFFF',
+                    bg: 'transparent',
+                    color: '#666666',
                   },
                 }}
               >

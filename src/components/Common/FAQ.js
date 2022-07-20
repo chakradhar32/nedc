@@ -17,6 +17,7 @@ const Faq = ({ data }) => {
           bg: '#fff',
           color: '#666',
           p: '1.25rem',
+          borderRadius: '0.25rem 0.25rem 0 0',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
         }}
         onClick={() => {
@@ -30,7 +31,15 @@ const Faq = ({ data }) => {
         </div>
         <div>{isOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
       </div>
-      <div sx={{ pt: '0.5rem', px: '2.5rem', bg: '#fff', color: '#666' }}>
+      <div
+        sx={{
+          pt: '0.5rem',
+          px: '2.5rem',
+          bg: '#fff',
+          color: '#666',
+          borderRadius: '0 0 0.25rem 0.25rem',
+        }}
+      >
         {isOpen
           ? data.answer && (
               <div
