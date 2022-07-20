@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Header from '../components/Common/Header';
+import Address from '../components/Contact/Address';
 import ContactForm from '../components/Contact/ContactForm';
-import Intro from '../components/Contact/Intro';
 import Layout from '../components/Layout/index';
 import { Seo } from '../components/Seo';
 
@@ -11,7 +11,7 @@ const ContactPage = () => {
       <Seo title="Contact Us | National Embryo Donation Center" />
       <div>
         <Header title="Contact Us" />
-        <Intro />
+        <Address />
         <ContactForm />
       </div>
     </Layout>

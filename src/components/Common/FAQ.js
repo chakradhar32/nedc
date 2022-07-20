@@ -15,6 +15,7 @@ const Faq = ({ data }) => {
           alignItems: 'center',
           cursor: 'pointer',
           bg: '#fff',
+          color: '#666',
           p: '1.25rem',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
         }}
@@ -24,12 +25,12 @@ const Faq = ({ data }) => {
       >
         <div sx={{ display: 'flex', gap: '1rem' }}>
           <div sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h4 sx={{ color: '#61A19E', fontSize: '1.25rem' }}>{data.question}</h4>
+            <h4 sx={{ fontSize: '1.25rem' }}>{data.question}</h4>
           </div>
         </div>
         <div>{isOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
       </div>
-      <div sx={{ pt: '0.5rem', px: '2.5rem', bg: '#fff' }}>
+      <div sx={{ pt: '0.5rem', px: '2.5rem', bg: '#fff', color: '#666' }}>
         {isOpen
           ? data.answer && (
               <div
