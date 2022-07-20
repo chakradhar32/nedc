@@ -16,7 +16,7 @@ const Intro = () => {
           },
         }}
       >
-        <SectionHeader heading={'Adoption'} />
+        <SectionHeader heading={'Adoption'} icon='/images/adoption@2x.png' />
         <p>
           The National Embryo Donation Center (NEDC) understands your desire to have a family,
           possibly through embryo adoption. So we’re here to help!

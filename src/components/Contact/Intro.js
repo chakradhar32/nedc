@@ -16,7 +16,7 @@ const Intro = () => {
           alignItems: 'center',
         }}
       >
-        <SectionHeader heading={'Contact NEDC'} />
+        <SectionHeader heading={'Contact NEDC'} icon='/images/contact@2x.png' />
         <div
           className="content"
           sx={{
