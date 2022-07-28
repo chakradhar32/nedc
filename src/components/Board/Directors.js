@@ -81,7 +81,7 @@ const Directors = () => {
           mt: '3rem',
         }}
       >
-        <SectionHeader heading="Board of Directors" />
+        <SectionHeader heading="Board of Directors" icon='/images/board@2x.png' />
         <p sx={{ my: '2rem' }}>
           The National Embryo Donation Center Board of Directors oversees the NEDC. Our board
           members come from a lot of different backgrounds. They also have different interests. But

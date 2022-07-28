@@ -12,7 +12,7 @@ const Resources = ({ title, data, description }) => {
         className="text-content"
         sx={{ flexDirection: 'column', display: 'flex', alignItems: 'center' }}
       >
-        <SectionHeader heading={title} />
+        <SectionHeader heading={title} icon='' />
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
         <div

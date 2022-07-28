@@ -5,6 +5,7 @@ import { jsx } from 'theme-ui';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'gatsby';
 import parseDate from '../../helpers/parseDate';
+import { FaTwitter, FaFacebookF, FaEnvelope } from 'react-icons/fa';
 
 const Post = ({ data, nextPost, previousPost }) => {
   return (
@@ -31,6 +32,34 @@ const Post = ({ data, nextPost, previousPost }) => {
           embryo donation,&nbsp;<a href="https://www.embryodonation.org/donation/">click here.</a>
         </p>
       </div>
+      <div
+        sx={{
+          color: '#999999',
+          display: 'flex',
+          gap: '0.5rem',
+          mt: '1rem',
+          a: {
+            color: 'inherit',
+          },
+          'a:hover': {
+            color: '#61A19E',
+          },
+        }}
+      >
+        <a href="/">
+          <FaTwitter />
+          {' '}
+        </a>
+        <a href="/">
+          {' '}
+          <FaFacebookF />
+        </a>
+        <a href="/">
+          {' '}
+          <FaEnvelope />
+        </a>
+      </div>
+
       <div>
         <div
           sx={{

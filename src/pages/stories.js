@@ -8,6 +8,7 @@ import BlogCard from '../components/Common/BlogCard';
 import { jsx } from 'theme-ui';
 import { Seo } from '../components/Seo';
 
+
 const StoryPage = ({ data }) => {
   const { posts } = data;
   return (
@@ -17,7 +18,7 @@ const StoryPage = ({ data }) => {
         <Header title="Personal Stories" cta="Adopt Embryos" ctaLink={'/adoption'} />
         <section>
           <div className="content">
-            <SectionHeader heading="Personal Stories" />
+            <SectionHeader heading="Personal Stories" icon='/images/personal stories@2x.png' />
             <p>
               You can read all the medical information available. But sometimes you need to hear
               someone’s story to understand what will happen when you donate or adopt embryos. These

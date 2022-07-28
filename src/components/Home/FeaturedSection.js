@@ -3,6 +3,7 @@
 import React from 'react';
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
+import { background } from 'styled-system';
 
 const FeaturedSection = () => {
   const data = [
@@ -29,23 +30,128 @@ const FeaturedSection = () => {
     },
   ];
 
+  // return (
+
+  //   <section
+  //     sx={{
+  //       background: 'rgba(75, 147, 142, 0.9)',
+  //       display: 'flex',
+
+  //     }}
+  //   >
+  //     <div
+  //       sx={{
+  //         display: 'flex',
+  //         justifyContent: 'center',
+  //         // alignItems: 'center',
+  //         flexWrap: 'wrap',
+  //         width: '100%',
+  //         mt: '24px',
+  //       }}
+  //       className="content"
+  //     >
+  //       {data.map((item) => (
+  //         <div
+  //           sx={{
+  //             display: 'flex',
+  //             flexDirection: 'column',
+  //             maxWidth: '380px',
+  //             padding: '1rem',
+  //             alignItems: 'center',
+  //           }}
+  //         >
+  //           <div
+  //             sx={{
+  //               width: '62px',
+  //               height: '62px',
+  //               background: '#DDEFED',
+  //               border: '8px solid #F4FDFC',
+  //               borderRadius: '50px',
+  //               display: 'flex',
+  //               justifyContent: 'center',
+  //               alignItems: 'center',
+  //               padding: '0.75rem',
+  //             }}
+  //           >
+  //             <img src={item.icon} alt="" />
+  //           </div>
+
+  //           <div
+  //             sx={{
+  //               color: '#FFFFFF',
+  //               mt: '1.5rem',
+  //               display: 'flex',
+  //               flexDirection: 'column',
+  //               alignItems: 'center',
+  //             }}
+  //           >
+  //             <h3
+  //               sx={{
+  //                 fontWeight: 500,
+  //                 fontSize: '26px',
+  //                 px: '24px',
+  //                 lineHeight: '1.15',
+  //                 textAlign: 'center',
+  //               }}
+  //             >
+  //               {item.title}
+  //             </h3>
+  //             <p
+  //               sx={{
+  //                 fontSize: '16px',
+  //                 lineHeight: '24px',
+  //                 textAlign: 'center',
+  //                 my: '1rem',
+
+  //               }}
+  //             >
+  //               {item.description}
+  //             </p>
+  //             <Link
+  //               to={item.link}
+  //               sx={{
+  //                 display: 'block',
+  //                 mt: '1rem',
+  //                 color: '#FFFFFF',
+  //                 background: 'transparent',
+  //                 fontSize: '16px',
+  //                 lineHeight: '20px',
+  //                 border: '1px solid #FFFFFF',
+  //                 borderRadius: '5px',
+  //                 padding: '12px 32px',
+  //                 textAlign: 'center',
+  //                 maxWidth: '250px',
+  //                 '&:hover': {
+  //                   background: '#F7A496',
+  //                 },
+  //               }}
+  //             >
+  //               {item.buttonText}
+  //             </Link>
+  //           </div>
+  //         </div>
+  //       ))}
+  //     </div>
+
+  //   </section>
+  // );
+
+
   return (
-    <section
-      sx={{
-        background: 'rgba(75, 147, 142, 0.9)',
-      }}
-    >
-      <div
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          width: '100%',
-          mt: '24px',
-        }}
-        className="content"
-      >
+    <section sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      width: '1680px',
+      height: '580px',
+      background: 'rgba(75, 147, 142, 0.9)'
+    }}>
+      <div sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        maxWidth: '1400px',
+        py: '4rem',
+        letterSpacing: '0,05rem'
+      }}>
         {data.map((item) => (
           <div
             sx={{
@@ -83,6 +189,8 @@ const FeaturedSection = () => {
             >
               <h3
                 sx={{
+                  width: '300px',
+                  height: "80px",
                   fontWeight: 500,
                   fontSize: '26px',
                   px: '24px',
@@ -94,12 +202,17 @@ const FeaturedSection = () => {
               </h3>
               <p
                 sx={{
+                  width: '300px',
+                  height: "180px",
                   fontSize: '16px',
                   lineHeight: '24px',
                   textAlign: 'center',
-                  my: '1rem',
+                  // my: '1rem',
+                  // mt: '46px'
                 }}
               >
+                {/* width,height given to description and title */}
+                {/* minor change in description */}
                 {item.description}
               </p>
               <Link
@@ -128,7 +241,7 @@ const FeaturedSection = () => {
         ))}
       </div>
     </section>
-  );
+  )
 };
 
 export default FeaturedSection;

@@ -12,7 +12,7 @@ const Intro = () => {
           mt: '3rem',
         }}
       >
-        <SectionHeader heading="Support the NEDC" />
+        <SectionHeader heading="Support the NEDC" icon='/images/support@2x.png' />
         <div
           sx={{
             p: {
