@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaTwitter, FaFacebookF, FaEnvelope } from 'react-icons/fa';
 
 const Navbar = () => {
   const menuItems = [
@@ -72,6 +73,43 @@ const Navbar = () => {
           bg: '#fff',
         }}
       >
+        <div
+          sx={{
+            color: '#999999',
+            bg: '#61A19E',
+            a: {
+              color: '#666',
+            },
+            'a:hover': {
+              color: '#FFFFFF',
+            },
+          }}
+        >
+          <div sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'end',
+            gap: '0.75rem',
+            maxWidth: '1400px',
+            margin: 'auto',
+            px: '2rem',
+            height: '50px',
+
+          }}>
+            <a href="/">
+              <FaTwitter />
+              {' '}
+            </a>
+            <a href="/">
+              {' '}
+              <FaFacebookF />
+            </a>
+            <a href="/">
+              {' '}
+              <FaEnvelope />
+            </a>
+          </div>
+        </div>
         <div
           sx={{
             maxWidth: '1400px',

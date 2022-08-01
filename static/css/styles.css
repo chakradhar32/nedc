@@ -316,17 +316,18 @@ input:focus + .sliderF {
   width: 100%;
 }
 .text-content {
-  max-width: 1024px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 1rem;
 }
-a, button {
+a,
+button {
   transition: all 0.25s;
 }
 .video-container {
   overflow: hidden;
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .video-container::after {

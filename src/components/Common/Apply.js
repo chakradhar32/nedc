@@ -30,9 +30,7 @@ const Apply = () => {
           display: 'flex',
           justifyContent: 'center',
           flexWrap: 'wrap',
-
           padding: '4rem',
-
           gap: '32px',
         }}
       >
@@ -40,7 +38,7 @@ const Apply = () => {
           return (
             <div
               sx={{
-                maxWidth: '600px',
+                maxWidth: '640px',
                 background: ' #FFFFFF',
                 boxShadow: '0px 4px 8px rgba(186, 228, 224, 0.5)',
                 padding: '4rem',

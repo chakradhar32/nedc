@@ -8,7 +8,7 @@ const SignUp = () => {
       <div
         className="content"
         sx={{
-          maxWidth: '960px !important',
+          maxWidth: '1400px',
           display: 'flex',
           alignItems: 'center',
           gap: '2rem',

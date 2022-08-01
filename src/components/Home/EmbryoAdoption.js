@@ -9,7 +9,7 @@ const EmbryoAdoption = () => {
       <div
         className="content"
         sx={{
-          maxWidth: '960px !important',
+          maxWidth: '1400px',
           display: 'flex',
           alignItems: 'center',
           borderBottom: '1px solid #E6E6E6',
