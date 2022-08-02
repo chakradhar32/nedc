@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { jsx } from 'theme-ui';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
@@ -21,6 +21,11 @@ const Member = ({ data }) => {
         onClick={() => {
           setIsOpen((prev) => !prev);
         }}
+        onKeyDown={() => {
+          setIsOpen((prev) => !prev);
+        }}
+        role="button"
+        tabIndex={data.index}
       >
         <div sx={{ display: 'flex', gap: '1rem' }}>
           <div sx={{ width: '4rem', height: '4rem', borderRadius: '50%', flex: '0 0 4rem' }}>

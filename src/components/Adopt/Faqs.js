@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from 'react';
 import { jsx } from 'theme-ui';
 import Faq from '../Common/FAQ';
 
@@ -146,8 +145,8 @@ const Faqs = () => {
       >
         Frequently Asked Questions
       </h3>
-      {data.map((item) => (
-        <Faq data={item} />
+      {data.map((item, index) => (
+        <Faq data={{ ...item, index }} />
       ))}
     </section>
   );

@@ -1,11 +1,17 @@
 import * as React from 'react';
 import Header from '../components/Common/Header';
-import Data from '../components/Donate/Data';
+import Intro from '../components/Donate/Intro';
 import Faqs from '../components/Donate/Faqs';
 import Layout from '../components/Layout/index';
 import Apply from '../components/Common/Apply';
 import { Seo } from '../components/Seo';
 import Resources from '../components/Common/Resources';
+import AskingQuestions from '../components/Donate/AskingQuestions';
+import WhyDonate from '../components/Donate/WhyDonate';
+import DonateAtoZ from '../components/Donate/DonateAtoZ';
+import AfterDonation from '../components/Donate/AfterDonation';
+import Legal from '../components/Donate/Legal';
+import Anonymity from '../components/Donate/Anonymity';
 
 const DonatePage = () => {
   const data = [
@@ -41,8 +47,14 @@ const DonatePage = () => {
           ctaLink="/donation"
           video="https://www.youtube.com/embed/DkQ_y9Wleco"
         />
-        <Data />
+        <Intro />
+        <AskingQuestions />
+        <WhyDonate />
+        <DonateAtoZ />
+        <AfterDonation />
+        <Legal />
         <Faqs />
+        <Anonymity />
         <Resources
           data={data}
           description={`We know you probably have a lot of questions about the embryo donation process. We’ve

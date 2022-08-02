@@ -1,9 +1,8 @@
 /** @jsx jsx */
-import React from 'react';
 import { jsx } from 'theme-ui';
 import SectionHeader from '../Common/SectionHeader';
 
-const Data = () => {
+const Intro = () => {
   return (
     <section>
       <div
@@ -53,4 +52,4 @@ const Data = () => {
   );
 };
 
-export default Data;
+export default Intro;

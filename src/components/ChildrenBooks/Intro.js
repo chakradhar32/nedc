@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from 'react';
 import { jsx } from 'theme-ui';
 import SectionHeader from '../Common/SectionHeader';
 
@@ -13,7 +12,7 @@ const Intro = () => {
           mb: '3rem',
         }}
       >
-        <SectionHeader heading="Children's Books" icon='/images/training-wheels@2x.png' />
+        <SectionHeader heading="Children's Books" icon="/images/training-wheels@2x.png" />
         <div
           sx={{
             p: {

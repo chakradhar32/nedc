@@ -64,7 +64,7 @@ const Navbar = () => {
     <>
       <nav
         sx={{
-          position: 'fixed',
+          position: 'sticky',
           top: 0,
           left: 0,
           right: 0,
@@ -85,20 +85,20 @@ const Navbar = () => {
             },
           }}
         >
-          <div sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'end',
-            gap: '0.75rem',
-            maxWidth: '1400px',
-            margin: 'auto',
-            px: '2rem',
-            height: '50px',
-
-          }}>
+          <div
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'end',
+              gap: '0.75rem',
+              maxWidth: '1400px',
+              margin: 'auto',
+              px: '2rem',
+              height: '50px',
+            }}
+          >
             <a href="/">
-              <FaTwitter />
-              {' '}
+              <FaTwitter />{' '}
             </a>
             <a href="/">
               {' '}
@@ -150,7 +150,7 @@ const Navbar = () => {
                 </Link>
               ))}
             <Link
-              to="/"
+              to="/adoption"
               sx={{
                 display: 'block',
                 my: '1rem',

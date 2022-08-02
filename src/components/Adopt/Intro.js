@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from 'react';
 import { jsx } from 'theme-ui';
 import SectionHeader from '../Common/SectionHeader';
 
@@ -16,7 +15,7 @@ const Intro = () => {
           },
         }}
       >
-        <SectionHeader heading={'Adoption'} icon='/images/adoption@2x.png' />
+        <SectionHeader heading={'Adoption'} icon="/images/adoption@2x.png" />
         <p>
           The National Embryo Donation Center (NEDC) understands your desire to have a family,
           possibly through embryo adoption. So we’re here to help!

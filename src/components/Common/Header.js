@@ -1,8 +1,7 @@
 /** @jsx jsx */
-
-import React from 'react';
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
+import ReactPlayer from 'react-player';
 
 const Header = ({ title, cta, ctaLink, description, image, video }) => {
   return (
@@ -90,7 +89,14 @@ const Header = ({ title, cta, ctaLink, description, image, video }) => {
               <img sx={{ width: '100%' }} src={image} alt="" />
             ) : (
               <div class="video-container">
-                <iframe
+                <ReactPlayer
+                  url={video}
+                  light={true}
+                  width="100%"
+                  height="100%"
+                  className="react-player"
+                />
+                {/* <iframe
                   width="560"
                   height="315"
                   src={video}
@@ -98,7 +104,7 @@ const Header = ({ title, cta, ctaLink, description, image, video }) => {
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
-                ></iframe>
+                ></iframe> */}
               </div>
             )}
           </div>

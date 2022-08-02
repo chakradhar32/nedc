@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { jsx } from 'theme-ui';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
@@ -23,6 +23,11 @@ const Faq = ({ data }) => {
         onClick={() => {
           setIsOpen((prev) => !prev);
         }}
+        onKeyDown={() => {
+          setIsOpen((prev) => !prev);
+        }}
+        role="button"
+        tabIndex={data.index}
       >
         <div sx={{ display: 'flex', gap: '1rem' }}>
           <div sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>

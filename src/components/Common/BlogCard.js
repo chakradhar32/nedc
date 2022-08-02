@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import * as React from 'react';
 import { FaTwitter, FaFacebookF, FaEnvelope } from 'react-icons/fa';
 import { Link } from 'gatsby';
 import { jsx } from 'theme-ui';

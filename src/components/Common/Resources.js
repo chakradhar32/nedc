@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { jsx } from 'theme-ui';
 import { CgFileDocument } from 'react-icons/cg';
@@ -12,7 +11,7 @@ const Resources = ({ title, data, description }) => {
         className="text-content"
         sx={{ flexDirection: 'column', display: 'flex', alignItems: 'center' }}
       >
-        <SectionHeader heading={title} icon='' />
+        <SectionHeader heading={title} icon="" />
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
         <div

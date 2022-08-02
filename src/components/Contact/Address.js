@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from 'react';
 import { jsx } from 'theme-ui';
 import SectionHeader from '../Common/SectionHeader';
 import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
@@ -146,6 +145,7 @@ const Address = () => {
             style={{ border: 0 }}
             allowfullscreen=""
             loading="lazy"
+            title="location"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
