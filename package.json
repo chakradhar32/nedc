@@ -17,6 +17,7 @@
     "format": "prettier --write \"**/*.{js,jsx,yml,yaml,json,css,scss,md}\""
   },
   "dependencies": {
+    "@axe-core/react": "^4.4.3",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@fontsource/inter": "^4.5.11",
@@ -24,9 +25,12 @@
     "@mdx-js/react": "^1.6.22",
     "dangerously-set-html-content": "^1.0.9",
     "gatsby": "^4.18.2",
+    "gatsby-plugin-axe-core-react": "^1.0.3",
+    "gatsby-plugin-react-helmet": "^5.19.0",
     "gatsby-plugin-theme-ui": "^0.14.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
     "react-player": "^2.10.1",
     "theme-ui": "^0.14.6"

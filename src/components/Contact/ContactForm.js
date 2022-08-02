@@ -21,6 +21,7 @@ const ContactForm = () => {
               fontSize: ['1.5rem', null, '2.5rem'],
               lineHeight: 1.15,
               color: '#666666',
+              mb: '1rem',
             }}
           >
             Got questions? We’re here to help.

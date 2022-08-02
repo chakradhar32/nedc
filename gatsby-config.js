@@ -15,5 +15,6 @@ module.exports = {
         uri: 'https://dega-api.factly.in/query',
       },
     },
+    `gatsby-plugin-axe-core-react`,
   ],
 };
