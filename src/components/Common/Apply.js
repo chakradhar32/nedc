@@ -47,7 +47,7 @@ const Apply = () => {
               <h3
                 sx={{
                   fontWeight: 400,
-                  fontSize: '2.75rem',
+                  fontSize: ['1rem', null, '2rem'],
                   lineHeight: '50px',
                   textAlign: 'center',
                   color: '#666666',
@@ -57,7 +57,7 @@ const Apply = () => {
               </h3>
               <p
                 sx={{
-                  fontSize: '20px',
+                  fontSize: ['0.75rem', null, '1.25rem'],
                   lineHeight: '30px',
                   textAlign: 'center',
                   color: '#666666',
@@ -72,7 +72,7 @@ const Apply = () => {
                   display: 'inline-block',
                   bg: '#8BBFBD',
                   color: '#FFFFFF',
-
+                  fontSize: ['0.75rem', null, '1rem'],
                   border: '1px solid #8BBFBD',
                   borderRadius: '5px',
                   px: '3rem',

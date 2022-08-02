@@ -7,7 +7,7 @@ const SectionHeader = ({ heading }) => {
       <h3
         sx={{
           fontWeight: 400,
-          fontSize: ['1.25rem', null, '2.25rem'],
+          fontSize: ['1.5rem', null, '2.5rem'],
           lineHeight: '80px',
           color: '#666666',
           mx: 'auto',

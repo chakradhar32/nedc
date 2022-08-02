@@ -24,7 +24,7 @@ const SignUp = () => {
           <h3
             sx={{
               fontWeight: 400,
-              fontSize: ['1.25rem', null, '2.25rem'],
+              fontSize: ['1.15rem', null, '2.25rem'],
               lineHeight: 1.15,
               mb: '1rem',
               color: ' #666666',
@@ -34,8 +34,8 @@ const SignUp = () => {
           </h3>
           <p
             sx={{
-              fontSize: '20px',
-              lineHeight: '30px',
+              fontSize: ['0.85rem', null, '1.25rem'],
+              lineHeight: '24px',
               color: ' #666666',
             }}
           >

@@ -78,9 +78,6 @@ const Navbar = () => {
             color: '#999999',
             bg: '#61A19E',
             a: {
-              color: '#666',
-            },
-            'a:hover': {
               color: '#FFFFFF',
             },
           }}

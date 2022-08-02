@@ -57,8 +57,8 @@ const AboutPage = () => {
                   <div
                     sx={{
                       bg: '#f5f5f4',
-                      flex: '1 0 calc(30% - 1rem)',
-                      maxWidth: 'calc(30% - 1rem)',
+                      flex: ['1 0 100%', null, null, '1 0 calc(30% - 1rem)'],
+                      maxWidth: ['100%', null, null, 'calc(30% - 1rem)'],
                       p: '2rem',
                       order: index === 1 ? 0 : 1,
                     }}

@@ -44,12 +44,12 @@ const EmbryoAdoption = () => {
             <h3
               sx={{
                 fontWeight: 500,
-                fontSize: '30px',
+                fontSize: ['1.15rem', null, '2.25rem'],
               }}
             >
               Embryo Adoption
             </h3>
-            <p sx={{ my: '2rem', fontSize: '1.25rem', color: '#666' }}>
+            <p sx={{ my: '2rem', fontSize: ['0.85rem', null, '1.25rem'], color: '#666' }}>
               Check out this quick video in which one couple explains why embryo adoption was the
               best choice for them. (And meet their adorable son.)
             </p>

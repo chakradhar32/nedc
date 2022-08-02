@@ -30,7 +30,7 @@ const ContactForm = () => {
               fontFamily: 'Inter',
               fontStyle: 'normal',
               fontWeight: 400,
-              fontSize: '20px',
+              fontSize: ['1rem', null, '1.5rem'],
               lineHeight: '30px',
               color: '#666666',
             }}

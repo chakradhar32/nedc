@@ -33,7 +33,7 @@ const Header = ({ title, cta, ctaLink, description, image, video }) => {
         >
           <h1
             sx={{
-              fontSize: ['2rem', null, '3rem'],
+              fontSize: ['1.75rem', null, '3.5rem'],
               lineHeight: 1.15,
               color: '#FFFFFF',
               mb: '24px',

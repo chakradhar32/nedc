@@ -28,7 +28,7 @@ const StoryPage = ({ data }) => {
         </section>
         <section>
           <div className="content">
-            <div sx={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
+            <div sx={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'center' }}>
               {posts.nodes.map((post) => (
                 <BlogCard key={post.id} data={post} />
               ))}
