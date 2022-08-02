@@ -36,6 +36,7 @@ const Apply = () => {
         {data.map((item) => {
           return (
             <div
+              key={item.title}
               sx={{
                 maxWidth: '640px',
                 background: ' #FFFFFF',

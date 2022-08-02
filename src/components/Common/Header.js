@@ -88,7 +88,7 @@ const Header = ({ title, cta, ctaLink, description, image, video }) => {
             {image ? (
               <img sx={{ width: '100%' }} src={image} alt="" />
             ) : (
-              <div class="video-container">
+              <div className="video-container">
                 <ReactPlayer
                   url={video}
                   light={true}

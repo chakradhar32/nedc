@@ -50,6 +50,7 @@ const FeaturedSection = () => {
       >
         {data.map((item) => (
           <div
+            key={item.title}
             sx={{
               display: 'flex',
               flexDirection: 'column',

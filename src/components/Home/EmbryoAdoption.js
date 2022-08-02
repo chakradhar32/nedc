@@ -30,7 +30,7 @@ const EmbryoAdoption = () => {
               maxWidth: ['100%', null, 'calc(70% - 1rem)'],
             }}
           >
-            <div class="video-container">
+            <div className="video-container">
               <ReactPlayer
                 url={'https://www.youtube.com/watch?v=DkQ_y9Wleco'}
                 light={true}
