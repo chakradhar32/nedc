@@ -5,8 +5,15 @@ import SectionHeader from '../Common/SectionHeader';
 const AfterDonation = () => {
   return (
     <section>
-      <div className="text-content">
-        <SectionHeader heading="WHAT TO EXPECT AFTER DONATING YOUR EMBRYOS" />
+      <div
+        className="text-content"
+        sx={{
+          p: {
+            mb: '1rem',
+          },
+        }}
+      >
+        <SectionHeader heading="What to Expect after donating your Embryos" />
 
         <p>
           <b>OVERVIEW:</b> It may take several months or several years to find a recipient couple

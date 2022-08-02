@@ -6,7 +6,7 @@ const WhyDonate = () => {
   return (
     <section>
       <div className="text-content">
-        <SectionHeader heading="WHY DONATE YOUR EMBRYOS TO THE NEDC" />
+        <SectionHeader heading="Why donate your Embryos to the NEDC" />
 
         <p>
           Many donate embryos through the NEDC mainly because we are a well-established organization

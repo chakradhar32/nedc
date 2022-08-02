@@ -2,8 +2,15 @@
 import React, { useState, useEffect } from 'react';
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { FaTwitter, FaFacebookF, FaEnvelope } from 'react-icons/fa';
+import {
+  FaBars,
+  FaInstagram,
+  FaPodcast,
+  FaTimes,
+  FaYoutube,
+  FaTwitter,
+  FaFacebookF,
+} from 'react-icons/fa';
 
 const Navbar = () => {
   const menuItems = [
@@ -92,18 +99,49 @@ const Navbar = () => {
               margin: 'auto',
               px: '2rem',
               height: '50px',
+              a: {
+                color: '#fff',
+
+                '&:hover': {
+                  color: '#F7A496',
+                },
+              },
             }}
           >
-            <a href="/">
-              <FaTwitter />{' '}
+            <a
+              href="http://www.twitter.com/embryodonation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
             </a>
-            <a href="/">
-              {' '}
+            <a
+              href="http://www.facebook.com/embryodonation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF />
             </a>
-            <a href="/">
-              {' '}
-              <FaEnvelope />
+            <a
+              href="http://www.youtube.com/NEDCKnoxville"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://www.instagram.com/nedcknoxtn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.podomatic.com/podcasts/mmellinger"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaPodcast />
             </a>
           </div>
         </div>
@@ -120,7 +158,7 @@ const Navbar = () => {
           }}
         >
           <div sx={{ py: '1rem', flexShrink: '1' }}>
-            <Link to="/">
+            <Link to="/" sx={{ minWidth: '100px', display: 'block' }}>
               <img src="/images/logo.png" alt="" />
             </Link>
           </div>

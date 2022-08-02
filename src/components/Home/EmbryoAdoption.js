@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
+import ReactPlayer from 'react-player';
 
 const EmbryoAdoption = () => {
   return (
@@ -22,19 +23,28 @@ const EmbryoAdoption = () => {
             flexWrap: 'wrap',
           }}
         >
+          {' '}
           <div
             sx={{
               flex: ['1 0 100%', null, '1 0 calc(70% - 1rem)'],
               maxWidth: ['100%', null, 'calc(70% - 1rem)'],
             }}
           >
-            <img
+            <div class="video-container">
+              <ReactPlayer
+                url={'https://www.youtube.com/watch?v=DkQ_y9Wleco'}
+                light={true}
+                width="100%"
+                height="100%"
+                className="react-player"
+              />
+            </div>
+          </div>
+          {/* <img
               src={'/images/home-callout-img-1.jpg'}
               alt=""
               sx={{ maxHeight: '400px', objectFit: 'cover' }}
-            />
-          </div>
-
+            /> */}
           <div
             sx={{
               flex: ['1 0 100%', null, '1 0 calc(30% - 1rem)'],
@@ -53,7 +63,7 @@ const EmbryoAdoption = () => {
               Check out this quick video in which one couple explains why embryo adoption was the
               best choice for them. (And meet their adorable son.)
             </p>
-            <Link
+            {/* <Link
               sx={{
                 display: 'inline-block',
                 fontWeight: 400,
@@ -72,7 +82,7 @@ const EmbryoAdoption = () => {
               href="/"
             >
               Watch Video
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

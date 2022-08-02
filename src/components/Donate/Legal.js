@@ -6,7 +6,7 @@ const Legal = () => {
   return (
     <section>
       <div className="text-content">
-        <SectionHeader heading="LEGAL INFORMATION" />
+        <SectionHeader heading="Legal Information" />
         <p>
           While embryo donation has a fairly uniform and specific legal definition, as is outlined
           in your consent forms, embryo adoption does not. In fact, Embryo Adoption is not a legal

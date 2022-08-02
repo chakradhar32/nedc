@@ -7,7 +7,7 @@ const DonateAtoZ = () => {
   return (
     <section>
       <div className="text-content">
-        <SectionHeader heading="DONATING YOUR EMBRYOS FROM A TO Z" />
+        <SectionHeader heading="Donating your Embryos from A to Z" />
         <p>
           You can apply to donate your embryos to the NEDC by clicking on the option “Apply to
           Donate” on the bottom right portion of our website. This will take you to our donor

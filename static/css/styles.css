@@ -325,6 +325,11 @@ a,
 button {
   transition: all 0.25s;
 }
+
+ol, ul {
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
 .video-container {
   position: relative;
   padding-top: 56.25%;

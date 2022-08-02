@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import * as React from 'react';
 import Header from '../components/Common/Header';
 import Intro from '../components/Donate/Intro';
@@ -12,6 +13,8 @@ import DonateAtoZ from '../components/Donate/DonateAtoZ';
 import AfterDonation from '../components/Donate/AfterDonation';
 import Legal from '../components/Donate/Legal';
 import Anonymity from '../components/Donate/Anonymity';
+import SectionHeader from '../components/Common/SectionHeader';
+import { jsx } from 'theme-ui';
 
 const DonatePage = () => {
   const data = [
@@ -52,8 +55,24 @@ const DonatePage = () => {
         <WhyDonate />
         <DonateAtoZ />
         <AfterDonation />
+        <section>
+          <div className="content">
+            <h2 sx={{ textAlign: 'center', fontSize: ['1.5rem', null, '2.5rem'], mb: '2rem' }}>
+              Communication of Information with donor information with donor conceived children and
+              realities of DNA testing opportunities
+            </h2>
+            <p>
+              <b>
+                We encourage all Donor Families and Recipient Families to be open and honest with
+                their children regarding their birth stories. There are many books many books and
+                websites available to help guide you through this journey.
+              </b>
+            </p>
+          </div>
+        </section>
         <Legal />
         <Faqs />
+
         <Anonymity />
         <Resources
           data={data}

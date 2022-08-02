@@ -6,7 +6,8 @@ const AskingQuestions = () => {
   return (
     <section>
       <div className="text-content">
-        <SectionHeader heading="ASKING QUESTIONS/CONNECTING" />
+        <SectionHeader heading="Asking Questions" />
+        {/* asking questions/CONNECTING */}
         <p>
           We’ve tried to include comprehensive information answering most of your questions about
           donating embryos in this section of our website. But we also realize you may have
@@ -18,7 +19,8 @@ const AskingQuestions = () => {
         </p>
         <p>
           You may also find our private Embryo Donors Group on Facebook to be a helpful source of
-          information and support. You may find and request to join the group by going to ----- -.
+          information and support. You may find and request to join the group by going{' '}
+          <a href="https://www.facebook.com/groups/embryodonation">here</a>.
         </p>
       </div>
     </section>

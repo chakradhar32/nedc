@@ -10,7 +10,7 @@ const Anonymity = () => {
       }}
     >
       <div className="text-content">
-        <SectionHeader heading="IMPORTANT! IS ANONYMITY REALLY POSSIBLE?" />
+        <SectionHeader heading="Important! Is Anonymity really Possible?" />
         <p>
           It is important to know that the concept of anonymity is rapidly fading in our culture,
           anthere is no longer a guarantee that your embryo donation will remain anonymous

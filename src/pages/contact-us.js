@@ -10,7 +10,7 @@ const ContactPage = () => {
     <Layout>
       <Seo title="Contact Us | National Embryo Donation Center" />
       <div>
-        <Header title="Contact Us" />
+        {/* <Header title="Contact Us" /> */}
         <Address />
         <ContactForm />
       </div>

@@ -2,10 +2,11 @@
 import { jsx } from 'theme-ui';
 
 import {
-  FaTwitterSquare,
-  FaFacebookSquare,
-  FaYoutubeSquare,
-  FaInstagramSquare,
+  FaTwitter,
+  FaFacebookF,
+  FaPodcast,
+  FaYoutube,
+  FaInstagram,
   FaMapMarkerAlt,
   FaPhone,
 } from 'react-icons/fa';
@@ -86,7 +87,9 @@ const Footer = () => {
               alignItems: 'flex-start',
             }}
           >
-            <FaPhone /> Phone:866-585-8549, Fax: 866-585-8549, Toll-Free: 866-585-8549.
+            <FaPhone /> Phone:866-585-8549, <br />
+            Fax: 866-585-8549, <br />
+            Toll-Free: 866-585-8549.
           </p>
         </div>
       </div>
@@ -115,15 +118,57 @@ const Footer = () => {
           </p>
           <div
             sx={{
-              color: '#FFFFFF',
               display: 'flex',
-              gap: '1rem',
+              alignItems: 'center',
+              justifyContent: 'end',
+              gap: '0.75rem',
+              maxWidth: '1400px',
+              px: '2rem',
+              height: '50px',
+              a: {
+                color: '#fff',
+
+                '&:hover': {
+                  color: '#F7A496',
+                },
+              },
             }}
           >
-            <FaTwitterSquare />
-            <FaFacebookSquare />
-            <FaYoutubeSquare />
-            <FaInstagramSquare />
+            <a
+              href="http://www.twitter.com/embryodonation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="http://www.facebook.com/embryodonation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="http://www.youtube.com/NEDCKnoxville"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://www.instagram.com/nedcknoxtn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.podomatic.com/podcasts/mmellinger"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaPodcast />
+            </a>
           </div>
         </div>
       </div>

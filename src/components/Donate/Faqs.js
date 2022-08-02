@@ -53,19 +53,6 @@ const Faqs = () => {
         gap: '1rem',
       }}
     >
-      <section>
-        <h2>
-          COMMUNICATION OF INFORMATION WITH DONOR CONCEIVED CHILDREN AND REALITIES OF DNA TESTING
-          OPPORTUNITIES
-        </h2>
-        <p>
-          <b>
-            We encourage all Donor Families and Recipient Families to be open and honest with their
-            children regarding their birth stories. There are many books
-          </b>
-        </p>
-      </section>
-
       <h3
         sx={{
           textAlign: 'center',
