@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
 import Plyr from 'plyr-react';
@@ -10,7 +10,15 @@ const Header = ({ title, cta, ctaLink, description, image, video }) => {
     return url[2] !== undefined ? url[2].split(/[^0-9a-z_\-]/i)[0] : url[0];
   }
 
-  const id = youTubeGetID(video);
+  const id = video && youTubeGetID(video);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      const Plyr = require('plyr');
+      Array.from(document.querySelectorAll('.js-player')).map((p) => new Plyr(p));
+    }
+  }, [video]);
+
   return (
     <header
       sx={{
@@ -96,7 +104,8 @@ const Header = ({ title, cta, ctaLink, description, image, video }) => {
               <img sx={{ width: '100%' }} src={image} alt="" />
             ) : (
               <>
-                <Plyr
+                <div className="js-player" data-plyr-provider="youtube" data-plyr-embed-id={id} />
+                {/* <Plyr
                   crossorigin
                   options={{
                     controls: [
@@ -122,7 +131,7 @@ const Header = ({ title, cta, ctaLink, description, image, video }) => {
                       },
                     ],
                   }}
-                />
+                /> */}
               </>
             )}
           </div>

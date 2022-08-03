@@ -28,6 +28,7 @@
     "gatsby-plugin-axe-core-react": "^1.0.3",
     "gatsby-plugin-react-helmet": "^5.19.0",
     "gatsby-plugin-theme-ui": "^0.14.6",
+    "plyr": "^3.7.2",
     "plyr-react": "^5.1.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
