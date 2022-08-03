@@ -219,6 +219,7 @@ h6 {
 }
 a {
   color: #8BBFBD;
+  /* color: rgba(75, 147, 142, 0.9); */
   text-decoration: inherit;
   font-weight: 500;
 }

@@ -8,6 +8,12 @@
 
  */
 @import '../fonts/fonts.css';
+
+:root {
+  /* --plyr-color-main: #8BBFBD */
+  --plyr-color-main: rgba(75, 147, 142, 0.9);
+}
+.plyr.plyr--stopped .plyr__controls { display: none }
 /* CSS Reset */
 *,
 *::before,

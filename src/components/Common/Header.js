@@ -1,9 +1,16 @@
 /** @jsx jsx */
+import React from 'react';
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
-import ReactPlayer from 'react-player';
+import Plyr from 'plyr-react';
 
 const Header = ({ title, cta, ctaLink, description, image, video }) => {
+  function youTubeGetID(url) {
+    url = url.split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/);
+    return url[2] !== undefined ? url[2].split(/[^0-9a-z_\-]/i)[0] : url[0];
+  }
+
+  const id = youTubeGetID(video);
   return (
     <header
       sx={{
@@ -88,24 +95,35 @@ const Header = ({ title, cta, ctaLink, description, image, video }) => {
             {image ? (
               <img sx={{ width: '100%' }} src={image} alt="" />
             ) : (
-              <div className="video-container">
-                <ReactPlayer
-                  url={video}
-                  light={true}
-                  width="100%"
-                  height="100%"
-                  className="react-player"
+              <>
+                <Plyr
+                  crossorigin
+                  options={{
+                    controls: [
+                      'play-large',
+                      'play',
+                      'progress',
+                      'current-time',
+                      'mute',
+                      'volume',
+                      'captions',
+                      'settings',
+                      'pip',
+                      'airplay',
+                      'fullscreen',
+                    ],
+                  }}
+                  source={{
+                    type: 'video',
+                    sources: [
+                      {
+                        src: id,
+                        provider: 'youtube',
+                      },
+                    ],
+                  }}
                 />
-                {/* <iframe
-                  width="560"
-                  height="315"
-                  src={video}
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe> */}
-              </div>
+              </>
             )}
           </div>
         )}
