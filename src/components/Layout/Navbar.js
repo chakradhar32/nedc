@@ -10,6 +10,7 @@ import {
   FaYoutube,
   FaTwitter,
   FaFacebookF,
+  FaLinkedin,
 } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -108,6 +109,13 @@ const Navbar = () => {
               },
             }}
           >
+            <a
+              href="http://www.linkedin.com/company/national-embryo-donation-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
             <a
               href="http://www.twitter.com/embryodonation"
               target="_blank"

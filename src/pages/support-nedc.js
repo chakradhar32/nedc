@@ -14,9 +14,9 @@ const SupportPage = () => {
       <Seo title="Support | National Embryo Donation Center" />
       <div>
         <Header
-          title={'Support NEDC'}
-          description="Giving Life. Giving Hope. Building Families"
-          cta="Learn More About NDEC"
+          title={'Support the NEDC'}
+          description="Giving Life. Giving Hope. Building Families."
+          cta="Learn More About NEDC"
           ctaLink="/about"
         />
         <Intro />

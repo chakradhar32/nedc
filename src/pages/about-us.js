@@ -33,7 +33,7 @@ const AboutPage = () => {
       <Seo title="About NEDC | National Embryo Donation Center" />
       <div>
         <Header
-          title="About NEDC"
+          title="About the NEDC"
           description={'The Leading Comprehensive Non-Profit Embryo Donation Program'}
           cta={'Adopt Embryos'}
           ctaLink={'/adoption'}

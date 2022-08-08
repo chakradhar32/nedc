@@ -15,7 +15,7 @@ const History = () => {
             mb: '1.5rem',
           }}
         >
-          History Of NEDC
+          History of the NEDC
         </h3>
         <div
           sx={{
