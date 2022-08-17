@@ -16,8 +16,9 @@ const SupportPage = () => {
         <Header
           title={'Support the NEDC'}
           description="Giving Life. Giving Hope. Building Families."
-          cta="Learn More About NEDC"
+          cta="Learn More About The NEDC"
           ctaLink="/about"
+          video={'https://www.youtube.com/embed/ObW1TRY6eTU'}
         />
         <Intro />
         <div sx={{ maxWidth: '960px', mx: 'auto', my: '2rem' }}>

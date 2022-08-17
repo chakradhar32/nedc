@@ -15,7 +15,7 @@ const StoryPage = ({ data }) => {
     <Layout>
       <Seo title="Stories | National Embryo Donation Center" />
       <div>
-        <Header title="Personal Stories" cta="Adopt Embryos" ctaLink={'/adoption'} />
+        <Header title="Personal Stories" cta="Adopt Embryos" ctaLink={'/adoption'} video={'https://www.youtube.com/embed/DoFgXFMrdLY'} />
         <section>
           <div className="content">
             <SectionHeader heading="Personal Stories" icon='/images/personal stories@2x.png' />

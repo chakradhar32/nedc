@@ -15,6 +15,7 @@ const ResourcePage = () => {
           cta="Buy a book today"
           ctaLink="#books"
           description="How did I get here?"
+          video={'https://www.youtube.com/embed/DoFgXFMrdLY'}
         />
         <Intro />
         <section>
